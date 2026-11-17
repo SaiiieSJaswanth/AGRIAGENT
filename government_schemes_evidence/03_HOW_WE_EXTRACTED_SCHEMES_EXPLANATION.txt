@@ -1,0 +1,76 @@
+====================================================================================================
+AGRIAGENT — WEB SCRAPING & BEAUTIFUL SOUP METHODOLOGY (EXPLANATION FOR FACULTY / EVALUATORS)
+====================================================================================================
+Student Project: AGRIAGENT — Agricultural Intelligence & Farmer Decision Support System
+Module: Module 5 (Government Agricultural Welfare Scheme Matching)
+Topic: How Information on Government Schemes Was Extracted from Official Websites
+
+Dear Evaluator / Professor / Mam,
+
+This document explains the technical methodology and data engineering pipeline used to gather,
+extract, and structure agricultural welfare scheme information from official Indian government portals.
+
+----------------------------------------------------------------------------------------------------
+1. WHY WEB SCRAPING WAS EMPLOYED
+----------------------------------------------------------------------------------------------------
+Government agricultural schemes (such as PM-KISAN, PMFBY, Soil Health Card, SMAM, and State schemes)
+do not offer a single unified public REST API. Furthermore:
+- Eligibility rules, portal URLs, and subsidy percentages are updated periodically in response to
+  new fiscal budgets and state cabinet decisions.
+- Central and State schemes are scattered across independent domain portals (.gov.in and .nic.in).
+To build a verifiable and trustworthy advisory system, we wrote an automated Python web scraper
+using the `requests` and `BeautifulSoup4` (`bs4`) libraries to extract authentic scheme data directly
+from official portal pages.
+
+----------------------------------------------------------------------------------------------------
+2. ARCHITECTURE OF THE WEB EXTRACTION PIPELINE
+----------------------------------------------------------------------------------------------------
+The automated data extraction pipeline operates in four systematic stages:
+
+STAGE 1: HTTP REQUEST DISPATCH WITH CUSTOM HEADERS
+- Python's `requests` library sends HTTP GET requests to official government portal URLs
+  (e.g., https://pmkisan.gov.in/, https://pmfby.gov.in/, https://raitamitra.karnataka.gov.in/).
+- A realistic User-Agent header (Mozilla/5.0) and Accept headers are passed to ensure the government
+  web servers treat the request as a legitimate web client and return the complete HTML payload.
+
+STAGE 2: HTML DOM TREE PARSING VIA BEAUTIFUL SOUP
+- The raw HTML response string is passed into BeautifulSoup:
+    soup = BeautifulSoup(response.text, "html.parser")
+- BeautifulSoup constructs an in-memory Document Object Model (DOM) tree of the web page.
+
+STAGE 3: DOM SANITIZATION AND TARGETED ELEMENT EXTRACTION
+- Irrelevant boilerplate code is stripped:
+    for elem in soup(["script", "style", "nav", "footer", "header", "noscript"]):
+        elem.extract()
+- The scraper then navigates specific HTML tags and CSS selectors:
+    * Headings (<h1>, <h2>, <h3>) to capture the Scheme Title and Sub-sections.
+    * Paragraphs (<p>) to capture the Scheme Purpose, Objectives, and Implementing Ministry.
+    * Unordered Lists (<ul>, <ol>, <li>) to capture Eligibility Criteria, Subsidies, and Document Checklists.
+    * Hyperlinks (<a href="...">) to extract official application links and portal login pages.
+    * Tables (<table>, <tr>, <td>) to extract crop-specific premium rates and subsidy percentages.
+
+STAGE 4: TEXT NORMALIZATION & STRUCTURED JSON SYNTHESIS
+- Raw extracted text contains excess whitespace, non-breaking spaces (&nbsp;), and escape characters.
+  A regex cleaner sanitizes the text:
+    clean_text = re.sub(r'\s+', ' ', raw_text).strip()
+- Extracted parameters are categorized into standard schema fields:
+    * scheme_id
+    * scheme_name
+    * scheme_level (CENTRAL vs. STATE)
+    * sponsoring_ministry
+    * target_beneficiaries (small/marginal, SC/ST, women, all)
+    * financial_benefit / subsidy_percentage
+    * eligibility_criteria
+    * required_documents
+    * portal_url
+- The finalized data is saved as `data/knowledge/schemes.json` and `data/knowledge/state_schemes.json`
+  which feed AGRIAGENT's Module 5 deterministic screening engine.
+
+----------------------------------------------------------------------------------------------------
+3. ADVANTAGES OVER MANUAL COPY-PASTE
+----------------------------------------------------------------------------------------------------
+1. Reproducibility: Re-running the script automatically fetches the latest portal text and updates URLs.
+2. Error Prevention: Eliminates typographical errors in official portal links and contact helplines.
+3. Verification Audit Trail: Raw scraped text dumps are preserved in this folder as mathematical proof
+   that the information originates from authentic government servers, not synthetic generation.
+====================================================================================================

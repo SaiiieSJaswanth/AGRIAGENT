@@ -1,0 +1,234 @@
+{
+  "timestamp": "2026-10-16T03:04:51.288235",
+  "crop_recommendation": {
+    "method": "historical APY crop-area ranking; no synthetic ML classifier"
+  },
+  "crop_yield_prediction": {
+    "task": "crop_yield_prediction",
+    "dataset": "Official Ministry of Agriculture & Farmers Welfare APY Dataset (DESAgri)",
+    "target": "Yield_tonnes_per_ha",
+    "unit": "tonnes per hectare",
+    "kind": "regression",
+    "features": [
+      "State_Name",
+      "Crop",
+      "Season",
+      "Area",
+      "Crop_Year"
+    ],
+    "selected_model": "RandomForestRegressor",
+    "test_metrics": {
+      "mae": 1.1610500477063892,
+      "rmse": 3.4535972516293656,
+      "r2": 0.8944703208624556,
+      "baseline_rmse_improvement_percent": 67.53265139277158
+    },
+    "all_models_compared": {
+      "CropMeanBaseline (Crop Historical Mean)": {
+        "mae": 1.7949507246854286,
+        "rmse": 5.101794930931881,
+        "r2": 0.7697088579617659,
+        "baseline_rmse_improvement_percent": 52.037906427274216
+      },
+      "DummyRegressor (Global Mean)": {
+        "mae": 4.917930269607038,
+        "rmse": 10.637139772049228,
+        "r2": -0.0011080864829859927,
+        "baseline_rmse_improvement_percent": 0.0
+      },
+      "RidgeRegression": {
+        "mae": 1.9467051804818807,
+        "rmse": 4.8006334399798645,
+        "r2": 0.7960947867341441,
+        "baseline_rmse_improvement_percent": 54.869132653551375
+      },
+      "RandomForestRegressor": {
+        "mae": 1.1610500477063892,
+        "rmse": 3.4535972516293656,
+        "r2": 0.8944703208624556,
+        "baseline_rmse_improvement_percent": 67.53265139277158
+      }
+    },
+    "per_crop_test_metrics": {
+      "Rice": {
+        "test_samples": 2485,
+        "actual_mean_yield_t_ha": 2.31,
+        "predicted_mean_yield_t_ha": 1.96,
+        "mae_t_ha": 0.681,
+        "rmse_t_ha": 0.862
+      },
+      "Wheat": {
+        "test_samples": 1139,
+        "actual_mean_yield_t_ha": 2.27,
+        "predicted_mean_yield_t_ha": 2.08,
+        "mae_t_ha": 0.57,
+        "rmse_t_ha": 0.741
+      },
+      "Maize": {
+        "test_samples": 2429,
+        "actual_mean_yield_t_ha": 2.64,
+        "predicted_mean_yield_t_ha": 2.23,
+        "mae_t_ha": 0.814,
+        "rmse_t_ha": 1.176
+      },
+      "Sugarcane": {
+        "test_samples": 965,
+        "actual_mean_yield_t_ha": 46.86,
+        "predicted_mean_yield_t_ha": 44.16,
+        "mae_t_ha": 10.318,
+        "rmse_t_ha": 14.498
+      },
+      "Cotton(lint)": {
+        "test_samples": 630,
+        "actual_mean_yield_t_ha": 1.9,
+        "predicted_mean_yield_t_ha": 1.49,
+        "mae_t_ha": 0.802,
+        "rmse_t_ha": 1.051
+      },
+      "Gram": {
+        "test_samples": 991,
+        "actual_mean_yield_t_ha": 0.92,
+        "predicted_mean_yield_t_ha": 0.99,
+        "mae_t_ha": 0.338,
+        "rmse_t_ha": 0.451
+      }
+    },
+    "artifact_path": "models/yield/model.joblib",
+    "evaluation_protocol": "Chronological split: Train (1997-2011), Test (2012-2015)",
+    "major_crops_covered": [
+      "Rice",
+      "Maize",
+      "Moong(Green Gram)",
+      "Urad",
+      "Groundnut",
+      "Sesamum",
+      "Wheat",
+      "Rapeseed &Mustard",
+      "Arhar/Tur",
+      "Gram",
+      "Onion",
+      "Jowar",
+      "Potato",
+      "Dry chillies",
+      "Sugarcane",
+      "Sunflower",
+      "Bajra",
+      "Small millets",
+      "Peas & beans (Pulses)",
+      "Cotton(lint)"
+    ],
+    "random_state": 42
+  },
+  "soil_fertility_classification": {
+    "task": "soil_fertility_classification",
+    "dataset": "Soil Health Card Portal Scraped Laboratory Samples",
+    "target": "soil_fertility_class",
+    "kind": "multiclass_classification",
+    "features": [
+      "pH",
+      "EC",
+      "S",
+      "Zn",
+      "Fe",
+      "Mn",
+      "Cu"
+    ],
+    "classes": [
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "selected_model": "RandomForestClassifier",
+    "test_metrics": {
+      "accuracy": 0.780373831775701,
+      "f1_weighted": 0.7714953809132273,
+      "f1_macro": 0.5105750038384769,
+      "precision_weighted": 0.7650376043798041,
+      "recall_weighted": 0.780373831775701
+    },
+    "all_models_compared": {
+      "DummyClassifier": {
+        "accuracy": 0.7710280373831776,
+        "f1_weighted": 0.6713436737109462,
+        "f1_macro": 0.29023746701846964,
+        "precision_weighted": 0.5944842344309547,
+        "recall_weighted": 0.7710280373831776
+      },
+      "LogisticRegression": {
+        "accuracy": 0.4953271028037383,
+        "f1_weighted": 0.5490296299529576,
+        "f1_macro": 0.41181520562250534,
+        "precision_weighted": 0.7682473156266392,
+        "recall_weighted": 0.4953271028037383
+      },
+      "RandomForestClassifier": {
+        "accuracy": 0.780373831775701,
+        "f1_weighted": 0.7714953809132273,
+        "f1_macro": 0.5105750038384769,
+        "precision_weighted": 0.7650376043798041,
+        "recall_weighted": 0.780373831775701
+      },
+      "GradientBoostingClassifier": {
+        "accuracy": 0.794392523364486,
+        "f1_weighted": 0.7676448980483623,
+        "f1_macro": 0.5246606922527437,
+        "precision_weighted": 0.7683058893339267,
+        "recall_weighted": 0.794392523364486
+      }
+    },
+    "per_class_report": {
+      "Low": {
+        "precision": 0.8579881656804734,
+        "recall": 0.8787878787878788,
+        "f1-score": 0.8682634730538922,
+        "support": 165.0
+      },
+      "Medium": {
+        "precision": 0.525,
+        "recall": 0.5526315789473685,
+        "f1-score": 0.5384615384615384,
+        "support": 38.0
+      },
+      "High": {
+        "precision": 0.2,
+        "recall": 0.09090909090909091,
+        "f1-score": 0.125,
+        "support": 11.0
+      },
+      "accuracy": 0.780373831775701,
+      "macro avg": {
+        "precision": 0.5276627218934912,
+        "recall": 0.5074428495481127,
+        "f1-score": 0.5105750038384769,
+        "support": 214.0
+      },
+      "weighted avg": {
+        "precision": 0.7650376043798041,
+        "recall": 0.780373831775701,
+        "f1-score": 0.7714953809132273,
+        "support": 214.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        145,
+        16,
+        4
+      ],
+      [
+        17,
+        21,
+        0
+      ],
+      [
+        7,
+        3,
+        1
+      ]
+    ],
+    "artifact_path": "models/soil_health/model.joblib",
+    "production_advisory": "Experimental benchmark model. Production inference uses Option A transparent ICAR-IISS rule-based module (src/models/soil_fertility.py) to prevent misleading ML-performance claims on rule-derived targets.",
+    "evaluation_protocol": "Stratified 80/20 split, target leakage prevention (OC, P, K excluded from predictors)",
+    "random_state": 42
+  }
+}

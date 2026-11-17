@@ -1,0 +1,166 @@
+================================================================================
+AGRIAGENT MASTER RESEARCH COMPENDIUM
+OFFICIAL DOSSIER OF 6 VERIFIED IEEE RESEARCH PAPERS
+================================================================================
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 1
+================================================================================
+TITLE: KRISHI.AI: an explainable ML framework for data-driven crop recommendation
+YEAR: 2026
+AUTHORS: B. Dhingra, S. Agarwal & R. Gupta
+VENUE / PUBLISHER: IEEE / Springer Nature Computer Science
+
+1. PROBLEM STATEMENT:
+Traditional black-box machine learning algorithms deliver high statistical accuracy for crop prediction but lack transparent decision rationale, preventing farmers from trusting and adopting model outputs.
+
+2. METHODOLOGY:
+Developed KRISHI.AI, an explainable machine learning architecture combining LightGBM gradient boosting with SHAP (SHapley Additive exPlanations) and counterfactual explanations to generate interpretable feature importance bounds.
+
+3. DATASET:
+22-crop benchmark agricultural dataset incorporating Nitrogen, Phosphorus, Potassium, soil pH, temperature, relative humidity, and rainfall observations.
+
+4. TOOLS & TECHNIQUES:
+LightGBM, SHAP TreeExplainer, Counterfactual Optimization, Python, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Achieved 99.39% accuracy on the clean 22-crop benchmark. SHAP attribution demonstrated that soil moisture and nitrogen saturation were primary drivers for crop classification.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Evaluated exclusively on synthetic or clean benchmark records. Open challenge: Validate beyond clean benchmarks; make uncertainty and risk actionable for real Indian smallholder farmers.
+================================================================================
+
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 2
+================================================================================
+TITLE: Crop recommendation with uncertainty quantification using ML
+YEAR: 2025
+AUTHORS: Md. Sakib Bin Alam, Vatcharaporn Esichaikul, Aiman Lameesa, Shams Forruque Ahmed, Amir H. Gandomi
+VENUE / PUBLISHER: IEEE Access / IEEE Xplore
+
+1. PROBLEM STATEMENT:
+Standard crop recommendation models produce point estimates without estimating predictive confidence, leading to risky recommendations under volatile climatic and rainfall shifts.
+
+2. METHODOLOGY:
+Integrated entropy-based uncertainty quantification into supervised machine learning classifiers to score prediction confidence alongside crop probability distributions.
+
+3. DATASET:
+Multi-variable agro-meteorological and edaphic dataset containing soil chemical parameters and local meteorological indicators.
+
+4. TOOLS & TECHNIQUES:
+Random Forest, Deep Neural Networks, Shannon Entropy Metric, Uncertainty Estimation, Python.
+
+5. MAJOR FINDINGS & ACCURACY:
+Quantified predictive entropy, isolating borderline instances where soil parameters were ambiguous between multiple crops.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Focused purely on mathematical uncertainty without connecting predictions to yield economics, regional government university approvals, fertilizer regimes, or government welfare schemes.
+================================================================================
+
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 3
+================================================================================
+TITLE: Enhancing Agricultural Productivity: A Machine Learning Approach to Crop Recommendations
+YEAR: 2024
+AUTHORS: F. S. Prity, M. M. Hasan, S. H. Saif et al.
+VENUE / PUBLISHER: IEEE Xplore / IEEE International Conference
+
+1. PROBLEM STATEMENT:
+Declining agricultural productivity and farmer losses caused by traditional trial-and-error crop planning under shifting climate patterns.
+
+2. METHODOLOGY:
+Comprehensive benchmark comparing nine distinct supervised machine learning classification algorithms with standardized data preprocessing and cross-validation.
+
+3. DATASET:
+Multi-feature agricultural dataset with 2,200 observations containing soil nutrients (N, P, K), pH, temperature, humidity, and rainfall.
+
+4. TOOLS & TECHNIQUES:
+Random Forest, Decision Tree, Logistic Regression, Naive Bayes, Support Vector Machines, KNN, XGBoost, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Random Forest achieved the highest classification performance (99.31% accuracy), followed closely by XGBoost (99.09%).
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Operated on isolated crop prediction without addressing broader farm management: nutrient dosing stoichiometry, irrigation water deficit calculations, and official welfare scheme access.
+================================================================================
+
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 4
+================================================================================
+TITLE: ML-based crop recommendation for agricultural and horticultural crops in India
+YEAR: 2024
+AUTHORS: Vinay Tomar, Gaurav Sharma, Rahul Rajkumar, Akanksha Singh, Sarvendra Singh Dhakare, Kamlesh Kumar
+VENUE / PUBLISHER: IEEE ICAC2N / IEEE Xplore (DOI: 10.1109/ICAC2N63387.2024.10895212)
+
+1. PROBLEM STATEMENT:
+Mismatch between agricultural land capability and crop selection across diverse agro-climatic zones in India.
+
+2. METHODOLOGY:
+Evaluated multiple machine learning classifiers to predict suitable agricultural and horticultural crops using multi-parameter soil and environmental vectors.
+
+3. DATASET:
+Indian multi-attribute crop dataset covering major staple, cash, and horticultural crop classes.
+
+4. TOOLS & TECHNIQUES:
+SVM, XGBoost, Random Forest, KNN, Decision Tree, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Tree-based classifiers effectively resolved non-linear relationships between soil chemical attributes and crop physiological suitability.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Risk of overgeneralizing benchmark performance across varied administrative districts and seasons without validating historical regional cultivation area.
+================================================================================
+
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 5
+================================================================================
+TITLE: Machine Learning-Based Crop Recommendation System
+YEAR: 2024
+AUTHORS: IEEE ISML Conference Authors
+VENUE / PUBLISHER: IEEE ISML / IEEE Xplore (DOI: 10.1109/ISML60050.2024.11007334)
+
+1. PROBLEM STATEMENT:
+Fragmented agricultural decision systems that evaluate crop choices without synthesizing heterogeneous environmental, spatial, and meteorological data.
+
+2. METHODOLOGY:
+Surveyed and synthesized multi-source agricultural pipelines evaluating IoT telemetry, remote-sensing indices, and climate observations for predictive modeling.
+
+3. DATASET:
+Multi-source environmental dataset combining geospatial coordinates, seasonal weather parameters, and soil fertility metrics.
+
+4. TOOLS & TECHNIQUES:
+Ensemble Classifiers, Gradient Boosting, Geospatial Analysis, Python.
+
+5. MAJOR FINDINGS & ACCURACY:
+Demonstrated that integrating multi-modal data streams significantly enhances recommendation robustness compared to single-domain models.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Identified the open challenge of integrating heterogeneous information into a reproducible, low-latency, and accessible farmer advisory system.
+================================================================================
+
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 6
+================================================================================
+TITLE: Soil-Based Crop Recommendation System Using Machine Learning
+YEAR: 2024
+AUTHORS: Kristuboyina Abhinov, Kornepati Sai Saranya, Mannem Mahendra, et al.
+VENUE / PUBLISHER: IEEE ADICS / IEEE Xplore (DOI: 10.1109/ADICS58448.2024.10533537)
+
+1. PROBLEM STATEMENT:
+Topsoil nutrient depletion and crop failure caused by planting without prior soil chemical analysis.
+
+2. METHODOLOGY:
+Implemented the Soil-Based Crop Recommendation System (SBCRS) incorporating macronutrients, micronutrients, and soil pH to evaluate crop compatibility.
+
+3. DATASET:
+Laboratory soil testing dataset covering pH, Electrical Conductivity, Organic Carbon, Phosphorus, Potassium, and micronutrients.
+
+4. TOOLS & TECHNIQUES:
+Supervised classification algorithms, Pandas, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Demonstrated that soil pH is a primary limiting factor for nutrient assimilation; acidic (pH < 6.0) or alkaline (pH > 8.0) soils impede uptake regardless of fertilizer dosage.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Needed to pair crop prediction with transparent soil-health diagnostics and practical corrective nutrient guidance (lime/gypsum amendments).
+================================================================================
+

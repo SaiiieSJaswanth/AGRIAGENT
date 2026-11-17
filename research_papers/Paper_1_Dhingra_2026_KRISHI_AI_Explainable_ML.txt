@@ -1,0 +1,26 @@
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 1
+================================================================================
+TITLE: KRISHI.AI: an explainable ML framework for data-driven crop recommendation
+YEAR: 2026
+AUTHORS: B. Dhingra, S. Agarwal & R. Gupta
+VENUE / PUBLISHER: IEEE / Springer Nature Computer Science
+
+1. PROBLEM STATEMENT:
+Traditional black-box machine learning algorithms deliver high statistical accuracy for crop prediction but lack transparent decision rationale, preventing farmers from trusting and adopting model outputs.
+
+2. METHODOLOGY:
+Developed KRISHI.AI, an explainable machine learning architecture combining LightGBM gradient boosting with SHAP (SHapley Additive exPlanations) and counterfactual explanations to generate interpretable feature importance bounds.
+
+3. DATASET:
+22-crop benchmark agricultural dataset incorporating Nitrogen, Phosphorus, Potassium, soil pH, temperature, relative humidity, and rainfall observations.
+
+4. TOOLS & TECHNIQUES:
+LightGBM, SHAP TreeExplainer, Counterfactual Optimization, Python, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Achieved 99.39% accuracy on the clean 22-crop benchmark. SHAP attribution demonstrated that soil moisture and nitrogen saturation were primary drivers for crop classification.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Evaluated exclusively on synthetic or clean benchmark records. Open challenge: Validate beyond clean benchmarks; make uncertainty and risk actionable for real Indian smallholder farmers.
+================================================================================

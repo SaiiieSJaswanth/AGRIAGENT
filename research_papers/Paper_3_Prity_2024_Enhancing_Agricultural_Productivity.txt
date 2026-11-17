@@ -1,0 +1,26 @@
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 3
+================================================================================
+TITLE: Enhancing Agricultural Productivity: A Machine Learning Approach to Crop Recommendations
+YEAR: 2024
+AUTHORS: F. S. Prity, M. M. Hasan, S. H. Saif et al.
+VENUE / PUBLISHER: IEEE Xplore / IEEE International Conference
+
+1. PROBLEM STATEMENT:
+Declining agricultural productivity and farmer losses caused by traditional trial-and-error crop planning under shifting climate patterns.
+
+2. METHODOLOGY:
+Comprehensive benchmark comparing nine distinct supervised machine learning classification algorithms with standardized data preprocessing and cross-validation.
+
+3. DATASET:
+Multi-feature agricultural dataset with 2,200 observations containing soil nutrients (N, P, K), pH, temperature, humidity, and rainfall.
+
+4. TOOLS & TECHNIQUES:
+Random Forest, Decision Tree, Logistic Regression, Naive Bayes, Support Vector Machines, KNN, XGBoost, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Random Forest achieved the highest classification performance (99.31% accuracy), followed closely by XGBoost (99.09%).
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Operated on isolated crop prediction without addressing broader farm management: nutrient dosing stoichiometry, irrigation water deficit calculations, and official welfare scheme access.
+================================================================================

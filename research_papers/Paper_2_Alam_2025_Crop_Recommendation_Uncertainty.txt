@@ -1,0 +1,26 @@
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 2
+================================================================================
+TITLE: Crop recommendation with uncertainty quantification using ML
+YEAR: 2025
+AUTHORS: Md. Sakib Bin Alam, Vatcharaporn Esichaikul, Aiman Lameesa, Shams Forruque Ahmed, Amir H. Gandomi
+VENUE / PUBLISHER: IEEE Access / IEEE Xplore
+
+1. PROBLEM STATEMENT:
+Standard crop recommendation models produce point estimates without estimating predictive confidence, leading to risky recommendations under volatile climatic and rainfall shifts.
+
+2. METHODOLOGY:
+Integrated entropy-based uncertainty quantification into supervised machine learning classifiers to score prediction confidence alongside crop probability distributions.
+
+3. DATASET:
+Multi-variable agro-meteorological and edaphic dataset containing soil chemical parameters and local meteorological indicators.
+
+4. TOOLS & TECHNIQUES:
+Random Forest, Deep Neural Networks, Shannon Entropy Metric, Uncertainty Estimation, Python.
+
+5. MAJOR FINDINGS & ACCURACY:
+Quantified predictive entropy, isolating borderline instances where soil parameters were ambiguous between multiple crops.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Focused purely on mathematical uncertainty without connecting predictions to yield economics, regional government university approvals, fertilizer regimes, or government welfare schemes.
+================================================================================

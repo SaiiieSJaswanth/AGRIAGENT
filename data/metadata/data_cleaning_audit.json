@@ -1,0 +1,58 @@
+{
+  "apy_dataset": {
+    "initial_rows": 246091,
+    "clean_rows": 233516,
+    "unique_states": 33,
+    "unique_districts": 646,
+    "unique_crops": 102,
+    "year_range": [
+      1997,
+      2015
+    ],
+    "yield_stats": {
+      "mean": 3.8840762669902484,
+      "median": 1.0,
+      "std": 9.44246825667433,
+      "min": 0.01,
+      "max": 80.0
+    }
+  },
+  "soil_health_dataset": {
+    "initial_rows": 1980,
+    "clean_rows": 1070,
+    "classes": {
+      "Low": 827,
+      "Medium": 191,
+      "High": 52
+    },
+    "feature_means": {
+      "pH": 7.938598130841121,
+      "EC": 0.3174018691588785,
+      "OC": 0.4089532710280374,
+      "P": 17.0992523364486,
+      "K": 174.7767570093458,
+      "S": 32.59717757009346,
+      "Zn": 1.1437289719626167,
+      "Fe": 11.53296261682243,
+      "Mn": 2.033485981308411,
+      "Cu": 1.8501588785046728
+    }
+  },
+  "district_rainfall_dataset": {
+    "initial_rows": 641,
+    "clean_rows": 641,
+    "states_covered": 35,
+    "districts_covered": 641,
+    "mean_annual_rainfall_mm": 1346.9695787831513,
+    "min_annual_rainfall_mm": 94.6,
+    "max_annual_rainfall_mm": 7229.3
+  },
+  "mandi_prices_dataset": {
+    "initial_rows": 89346,
+    "clean_rows": 89013,
+    "unique_states": 23,
+    "unique_districts": 241,
+    "modal_price_mean": 2110.0849647804253,
+    "modal_price_median": 1890.0
+  }
+}

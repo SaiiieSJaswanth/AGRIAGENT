@@ -1,0 +1,478 @@
+{
+  "farmer_profile": {
+    "state": "Andhra Pradesh",
+    "district": "Anantapur",
+    "soil_type": "Red Soil",
+    "land_area_acres": 2.5,
+    "land_ownership": "owned",
+    "farmer_category": null,
+    "income_category": null,
+    "farming_experience_years": null,
+    "current_crop": null,
+    "season": "Rabi",
+    "irrigation_available": true,
+    "existing_agricultural_loan": false,
+    "loan_required": false,
+    "loan_purpose": null,
+    "equipment_required": false,
+    "irrigation_required": false,
+    "insurance_required": false,
+    "subsidy_required": false,
+    "nitrogen_kg_ha": null,
+    "phosphorus_kg_ha": null,
+    "potassium_kg_ha": null,
+    "soil_ph": null,
+    "organic_carbon_percent": null,
+    "electrical_conductivity_ds_m": null,
+    "sulfur_ppm": null,
+    "zinc_ppm": null,
+    "iron_ppm": null,
+    "manganese_ppm": null,
+    "copper_ppm": null,
+    "social_category": null,
+    "gender": null
+  },
+  "location_intelligence": {
+    "rainfall_normals": {
+      "source": "India Meteorological Department (IMD) District Rainfall Normals",
+      "state": "Andhra Pradesh",
+      "district": "Anantapur",
+      "annual_normal_mm": 572.7,
+      "kharif_normal_mm": 322.8,
+      "rabi_normal_mm": 161.9,
+      "monthly_normals_mm": {
+        "JAN": 3.0,
+        "FEB": 3.3,
+        "MAR": 6.1,
+        "APR": 18.9,
+        "MAY": 56.7,
+        "JUN": 55.2,
+        "JUL": 64.3,
+        "AUG": 74.5,
+        "SEP": 128.8,
+        "OCT": 115.0,
+        "NOV": 35.3,
+        "DEC": 11.6
+      }
+    },
+    "state_crop_catalog": [
+      {
+        "crop": "Rice",
+        "crop_category": "Cereal"
+      },
+      {
+        "crop": "Cotton",
+        "crop_category": "Fibre"
+      },
+      {
+        "crop": "Groundnut",
+        "crop_category": "Oilseed"
+      },
+      {
+        "crop": "Pigeonpea",
+        "crop_category": "Pulse"
+      },
+      {
+        "crop": "Blackgram",
+        "crop_category": "Pulse"
+      },
+      {
+        "crop": "Greengram",
+        "crop_category": "Pulse"
+      },
+      {
+        "crop": "Sorghum",
+        "crop_category": "Cereal"
+      },
+      {
+        "crop": "Maize",
+        "crop_category": "Cereal"
+      },
+      {
+        "crop": "Sunflower",
+        "crop_category": "Oilseed"
+      },
+      {
+        "crop": "Chilli",
+        "crop_category": "Vegetable/Spice"
+      },
+      {
+        "crop": "Tobacco",
+        "crop_category": "Commercial"
+      },
+      {
+        "crop": "Sugarcane",
+        "crop_category": "Commercial"
+      },
+      {
+        "crop": "Banana",
+        "crop_category": "Fruit"
+      },
+      {
+        "crop": "Mango",
+        "crop_category": "Fruit"
+      },
+      {
+        "crop": "Cashew",
+        "crop_category": "Plantation"
+      }
+    ]
+  },
+  "crop_recommendation": {
+    "status": "success",
+    "recommendation_type": "historical_regional_crop_shortlist",
+    "top_crop": "Gram",
+    "ranked_recommendations": [
+      {
+        "crop": "Gram",
+        "cultivated_area_ha": 81251.8,
+        "recorded_production": 59240.0,
+        "observations": 5,
+        "latest_year": 2014,
+        "also_listed_in_state_catalog": false,
+        "evidence_scope": "district_and_season",
+        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
+      },
+      {
+        "crop": "Groundnut",
+        "cultivated_area_ha": 18623.2,
+        "recorded_production": 30439.4,
+        "observations": 5,
+        "latest_year": 2014,
+        "also_listed_in_state_catalog": true,
+        "evidence_scope": "district_and_season",
+        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
+      },
+      {
+        "crop": "Rice",
+        "cultivated_area_ha": 12322.0,
+        "recorded_production": 31127.8,
+        "observations": 5,
+        "latest_year": 2014,
+        "also_listed_in_state_catalog": true,
+        "evidence_scope": "district_and_season",
+        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
+      },
+      {
+        "crop": "Jowar",
+        "cultivated_area_ha": 7768.8,
+        "recorded_production": 3964.8,
+        "observations": 5,
+        "latest_year": 2014,
+        "also_listed_in_state_catalog": false,
+        "evidence_scope": "district_and_season",
+        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
+      },
+      {
+        "crop": "Maize",
+        "cultivated_area_ha": 6055.8,
+        "recorded_production": 46232.0,
+        "observations": 5,
+        "latest_year": 2014,
+        "also_listed_in_state_catalog": true,
+        "evidence_scope": "district_and_season",
+        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
+      }
+    ],
+    "state": "Andhra Pradesh",
+    "district": "Anantapur",
+    "matched_source_district": "Anantapur",
+    "season": "Rabi",
+    "evidence_scope": "district_and_season",
+    "evidence_year_range": [
+      2010,
+      2014
+    ],
+    "dataset_provenance": "Historical district/season crop area and production statistics (DESAgri/APY mirror; packaged data 1997-2015)",
+    "ranking_inputs": [
+      "state",
+      "district",
+      "season"
+    ],
+    "not_used_for_crop_ranking": [
+      "soil type",
+      "soil NPK",
+      "soil pH",
+      "current weather"
+    ],
+    "ranking_method": "Descending mean recorded cultivated area per observation over the latest five available years in the selected evidence slice; ties broken by observation count and mean recorded production.",
+    "limitations": "This shortlist reflects crops historically cultivated in the selected region and season, not a promise of profitability or farm-specific suitability. The APY data does not include farm-level soil type or soil-test measurements, so those inputs do not change the crop ranking; they are used by separate soil/fertilizer advisory components. The packaged historical series ends in 2015. Validate current choices against the latest district KVK/state agriculture university advisory, irrigation, soil test, variety, pest pressure, and market access. Google search results can differ by query and source; exact result matching cannot be guaranteed."
+  },
+  "soil_health": {
+    "method": "Rule-based agronomic evaluation (ICAR-IISS / Soil Health Card Standards)",
+    "parameter_evaluations": {
+      "pH": {
+        "value": 6.8,
+        "unit": "pH scale",
+        "status": "Neutral (Optimal)",
+        "management": "Optimal soil reaction for maximum nutrient availability for most field crops."
+      },
+      "EC": {
+        "value": 0.35,
+        "unit": "dS/m",
+        "status": "Normal (Non-saline)",
+        "management": "Salinity within safe range; no restriction on crop selection."
+      },
+      "OC": {
+        "value": 0.6,
+        "unit": "%",
+        "rating": "Medium",
+        "score": 2,
+        "adjustment": "Apply 100% of standard Recommended Dose of Fertilizer (RDF)."
+      },
+      "P": {
+        "value": 16.0,
+        "unit": "kg/ha",
+        "rating": "Medium",
+        "score": 2,
+        "adjustment": "Apply 100% of standard Recommended Dose of Fertilizer (RDF)."
+      },
+      "K": {
+        "value": 180.0,
+        "unit": "kg/ha",
+        "rating": "Medium",
+        "score": 2,
+        "adjustment": "Apply 100% of standard Recommended Dose of Fertilizer (RDF)."
+      }
+    },
+    "deficiencies": [],
+    "management_advisories": [],
+    "soil_fertility_class": "Medium",
+    "fertility_index": 2.0,
+    "internal_ml_soil_assessment": {
+      "status": "success",
+      "predicted_fertility_class": "Medium",
+      "class_probabilities": {
+        "High": 0.1372,
+        "Low": 0.4303,
+        "Medium": 0.4325
+      },
+      "display_policy": "Hidden internal ML validation signal; farmer receives ICAR-IISS standard evaluation."
+    }
+  },
+  "fertilizer_guidance": {
+    "crop": "Gram",
+    "method": "ICAR Recommended Dose of Fertilizer (RDF) adjusted by Soil Test Crop Response (STCR) + ML Classifier",
+    "ml_regime_classification": "NPK_20_20_0_13_Sulfur_Enriched",
+    "ml_status": "success",
+    "land_area_acres": 2.5,
+    "land_area_ha": 1.01,
+    "base_rdf_kg_ha": {
+      "N": 80.0,
+      "P2O5": 40.0,
+      "K2O": 40.0
+    },
+    "adjusted_recommendation_kg_ha": {
+      "fertilizer_n_requirement_kg_ha": 80.0,
+      "fertilizer_p2o5_requirement_kg_ha": 40.0,
+      "fertilizer_k2o_requirement_kg_ha": 40.0
+    },
+    "commercial_fertilizer_per_ha": {
+      "Urea (46% N) [kg/ha]": 139.9,
+      "DAP (18-46-0) [kg/ha]": 87.0,
+      "MOP (60% K2O) [kg/ha]": 66.7
+    },
+    "commercial_fertilizer_quantities": {
+      "urea_kg": 141.3,
+      "dap_kg": 87.9,
+      "mop_kg": 67.4
+    },
+    "total_farm_requirement": {
+      "Urea [kg]": 141.3,
+      "DAP [kg]": 87.9,
+      "MOP [kg]": 67.4
+    },
+    "nitrogen_double_counting_safeguard": "DAP contributed 15.7 kg/ha N, deducted before calculating Urea requirement.",
+    "application_schedule": "1/2 N + full P & K basal; 1/2 N topdressed at active vegetative stage",
+    "safety_warnings": [
+      "Never mix Urea with lime or alkaline substances directly.",
+      "Apply DAP and MOP at the root zone (basal), not as broadcast on wet foliage.",
+      "Split Nitrogen doses to minimize volatilization and leaching losses."
+    ],
+    "sources": "ICAR-IISS Soil Test Crop Response (STCR) & State Agricultural University Package of Practices."
+  },
+  "irrigation_guidance": {
+    "crop": "Gram",
+    "season": "Rabi",
+    "soil_type": "Red Soil",
+    "soil_water_holding_capacity_mm_m": 120.0,
+    "method": "Hybrid Decision Tree ML Classifier + FAO-56 Agronomic Water Balance",
+    "irrigation_requirement_class": "Low irrigation requirement",
+    "ml_irrigation_class": "Low irrigation requirement",
+    "ml_status": "success",
+    "crop_water_requirement_mm": 550.0,
+    "expected_seasonal_rainfall_mm": 161.9,
+    "rainfall_data_nature": "Climatological historical normal (IMD 1951-2000), not a live weather forecast",
+    "estimated_net_deficit_mm": 56.5,
+    "critical_growth_stages": "Flowering and seed/grain filling stages",
+    "advisory": "Light supplemental irrigation recommended (57 mm deficit) during dry spells.",
+    "water_conservation_tips": [
+      "Use organic mulching (crop residue / straw) to reduce surface soil evaporation by up to 30%.",
+      "Adopt drip or micro-sprinkler irrigation to achieve 40-50% water savings compared to flood irrigation.",
+      "Schedule irrigation during early morning or evening hours to minimize evaporative loss.",
+      "Construct farm ponds or check dams for in-situ rainwater harvesting under PMKSY."
+    ],
+    "alerts": [],
+    "sources": "FAO-56 Crop Evapotranspiration Guidelines & IMD District Climatological Normals."
+  },
+  "support_matches": [
+    {
+      "scheme_name": "PM-KISAN",
+      "scheme_level": "CENTRAL",
+      "state": null,
+      "status": "potentially_eligible",
+      "benefit_type": "income_support",
+      "benefit_description": "Potential income-support program; eligibility and exclusions must be verified through the official PM-KISAN system.",
+      "required_documents": [
+        "Land/landholding records",
+        "Bank account details",
+        "Identity/KYC information as required by the official process"
+      ],
+      "application_method": "Official PM-KISAN portal / designated registration channels",
+      "official_source": "PM-KISAN official portal",
+      "source_url": "https://pmkisan.gov.in/",
+      "last_verified": "2026-09-27",
+      "evidence": [
+        true
+      ]
+    },
+    {
+      "scheme_name": "Soil Health Card",
+      "scheme_level": "CENTRAL",
+      "state": null,
+      "status": "potentially_relevant",
+      "benefit_type": "soil_information",
+      "benefit_description": "Potentially relevant soil-testing and soil-health information service; availability and local process should be verified.",
+      "required_documents": [
+        "Farmer/holding information as required by the local soil-testing process"
+      ],
+      "application_method": "Official Soil Health Card portal / local agriculture and soil-testing channels",
+      "official_source": "Soil Health Card official portal",
+      "source_url": "https://soilhealth.dac.gov.in/",
+      "last_verified": "2026-09-27",
+      "evidence": []
+    },
+    {
+      "scheme_name": "Rythu Bharosa",
+      "scheme_level": "STATE",
+      "state": "Andhra Pradesh",
+      "status": "potentially_eligible",
+      "benefit_type": "state_agriculture_support",
+      "benefit_description": "State-specific agriculture support; exact benefit and current eligibility depend on the applicable state guidelines.",
+      "required_documents": [
+        "Identity/KYC documents",
+        "Land/holding records where applicable",
+        "Bank account details where applicable",
+        "State-specific supporting documents as required"
+      ],
+      "application_method": "Official Andhra Pradesh Agriculture Department / state DBT or designated implementing agency",
+      "official_source": "Andhra Pradesh Agriculture Department",
+      "source_url": "",
+      "last_verified": "2026-10-04",
+      "evidence": [
+        true
+      ]
+    },
+    {
+      "scheme_name": "AP Crop Insurance / YSR Free Crop Insurance",
+      "scheme_level": "STATE",
+      "state": "Andhra Pradesh",
+      "status": "potentially_eligible",
+      "benefit_type": "state_agriculture_support",
+      "benefit_description": "State-specific agriculture support; exact benefit and current eligibility depend on the applicable state guidelines.",
+      "required_documents": [
+        "Identity/KYC documents",
+        "Land/holding records where applicable",
+        "Bank account details where applicable",
+        "State-specific supporting documents as required"
+      ],
+      "application_method": "Official Andhra Pradesh Agriculture Department / state DBT or designated implementing agency",
+      "official_source": "Andhra Pradesh Agriculture Department",
+      "source_url": "",
+      "last_verified": "2026-10-04",
+      "evidence": [
+        true
+      ]
+    },
+    {
+      "scheme_name": "Andhra Pradesh Community Managed Natural Farming (APCNF)",
+      "scheme_level": "STATE",
+      "state": "Andhra Pradesh",
+      "status": "potentially_eligible",
+      "benefit_type": "state_agriculture_support",
+      "benefit_description": "State-specific agriculture support; exact benefit and current eligibility depend on the applicable state guidelines.",
+      "required_documents": [
+        "Identity/KYC documents",
+        "Land/holding records where applicable",
+        "Bank account details where applicable",
+        "State-specific supporting documents as required"
+      ],
+      "application_method": "Official Andhra Pradesh Agriculture Department / state DBT or designated implementing agency",
+      "official_source": "Andhra Pradesh Agriculture Department",
+      "source_url": "",
+      "last_verified": "2026-10-04",
+      "evidence": [
+        true
+      ]
+    },
+    {
+      "scheme_name": "Rythu Seva Kendras (RSKs)",
+      "scheme_level": "STATE",
+      "state": "Andhra Pradesh",
+      "status": "potentially_eligible",
+      "benefit_type": "state_agriculture_support",
+      "benefit_description": "State-specific agriculture support; exact benefit and current eligibility depend on the applicable state guidelines.",
+      "required_documents": [
+        "Identity/KYC documents",
+        "Land/holding records where applicable",
+        "Bank account details where applicable",
+        "State-specific supporting documents as required"
+      ],
+      "application_method": "Official Andhra Pradesh Agriculture Department / state DBT or designated implementing agency",
+      "official_source": "Andhra Pradesh Agriculture Department",
+      "source_url": "",
+      "last_verified": "2026-10-04",
+      "evidence": [
+        true
+      ]
+    },
+    {
+      "scheme_name": "Polambadi / Farmer Field Schools",
+      "scheme_level": "STATE",
+      "state": "Andhra Pradesh",
+      "status": "potentially_eligible",
+      "benefit_type": "state_agriculture_support",
+      "benefit_description": "State-specific agriculture support; exact benefit and current eligibility depend on the applicable state guidelines.",
+      "required_documents": [
+        "Identity/KYC documents",
+        "Land/holding records where applicable",
+        "Bank account details where applicable",
+        "State-specific supporting documents as required"
+      ],
+      "application_method": "Official Andhra Pradesh Agriculture Department / state DBT or designated implementing agency",
+      "official_source": "Andhra Pradesh Agriculture Department",
+      "source_url": "",
+      "last_verified": "2026-10-04",
+      "evidence": [
+        true
+      ]
+    }
+  ],
+  "documents": [
+    "Land/landholding records",
+    "Bank account details",
+    "Identity/KYC information as required by the official process",
+    "Farmer/holding information as required by the local soil-testing process",
+    "Identity/KYC documents",
+    "Land/holding records where applicable",
+    "Bank account details where applicable",
+    "State-specific supporting documents as required"
+  ],
+  "limitations": [
+    "Farmer-facing crop shortlist is ranked from historical APY crop-area records (DESAgri). An experimental APY-trained Random Forest crop classifier also executes internally in shadow mode without altering the displayed ranking.",
+    "Soil health assessments utilize official ICAR-IISS diagnostic threshold ratings with an internal Random Forest validation layer.",
+    "Fertilizer recommendations are calculated via ICAR Soil Test Crop Response (STCR) principles, commercial NPK conversions, and a trained ML classifier.",
+    "Irrigation requirements are classified via an interpretable Decision Tree trained on FAO-56 water balance and IMD climatological normal rainfall.",
+    "Government scheme matches indicate potential eligibility based on official published criteria; formal approval is subject to competent authorities."
+  ]
+}

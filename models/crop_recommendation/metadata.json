@@ -1,0 +1,56 @@
+{
+  "model": "RandomForestClassifier",
+  "task": "crop_recommendation",
+  "dataset": "data/processed/clean_apy_yield.csv",
+  "features": [
+    "State_Name",
+    "District_Name",
+    "Season",
+    "Crop_Year",
+    "Area"
+  ],
+  "classes": [
+    "Bajra",
+    "Banana",
+    "Cotton(lint)",
+    "Dry chillies",
+    "Gram",
+    "Groundnut",
+    "Guar seed",
+    "Jowar",
+    "Jute",
+    "Maize",
+    "Moong(Green Gram)",
+    "Onion",
+    "Potato",
+    "Rapeseed &Mustard",
+    "Rice",
+    "Sesamum",
+    "Soyabean",
+    "Sugarcane",
+    "Urad",
+    "Wheat"
+  ],
+  "test_metrics": {
+    "accuracy": 0.6033280863503485,
+    "f1_weighted": 0.4828494231390869
+  },
+  "all_models_compared": {
+    "DummyClassifier": {
+      "accuracy": 0.3730604902181246,
+      "f1_weighted": 0.20272104594558424
+    },
+    "LogisticRegression": {
+      "accuracy": 0.8088599055543063,
+      "f1_weighted": 0.8055339508984706
+    },
+    "DecisionTreeClassifier": {
+      "accuracy": 0.7054193838542838,
+      "f1_weighted": 0.6698976861978373
+    },
+    "RandomForestClassifier": {
+      "accuracy": 0.6033280863503485,
+      "f1_weighted": 0.4828494231390869
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "project": "AGRIAGENT",
+  "version": "2.0.0",
+  "datasets": {
+    "clean_apy_yield": {
+      "path": "data/processed/clean_apy_yield.csv",
+      "rows": 233516,
+      "columns": 8,
+      "publisher": "Directorate of Economics and Statistics, MoA&FW, GoI",
+      "fields": {
+        "State_Name": {
+          "type": "string",
+          "description": "State or UT name"
+        },
+        "District_Name": {
+          "type": "string",
+          "description": "District name"
+        },
+        "Crop_Year": {
+          "type": "integer",
+          "range": [
+            1997,
+            2015
+          ]
+        },
+        "Season": {
+          "type": "string",
+          "values": [
+            "Kharif",
+            "Rabi",
+            "Summer",
+            "Whole Year",
+            "Autumn",
+            "Winter"
+          ]
+        },
+        "Crop": {
+          "type": "string",
+          "description": "Crop name"
+        },
+        "Area": {
+          "type": "float",
+          "unit": "hectares",
+          "min": 0.01
+        },
+        "Production": {
+          "type": "float",
+          "unit": "tonnes",
+          "min": 0.0
+        },
+        "Yield_tonnes_per_ha": {
+          "type": "float",
+          "unit": "tonnes/hectare",
+          "min": 0.01,
+          "max": 80.0
+        }
+      }
+    },
+    "clean_district_rainfall": {
+      "path": "data/processed/clean_district_rainfall.csv",
+      "rows": 641,
+      "columns": 19,
+      "publisher": "India Meteorological Department (IMD)",
+      "fields": {
+        "STATE_UT_NAME": {
+          "type": "string"
+        },
+        "DISTRICT": {
+          "type": "string"
+        },
+        "ANNUAL": {
+          "type": "float",
+          "unit": "mm",
+          "description": "Mean annual precipitation normal"
+        }
+      }
+    },
+    "clean_mandi_prices": {
+      "path": "data/processed/clean_mandi_prices.csv",
+      "rows": 89346,
+      "columns": 10,
+      "publisher": "AGMARKNET / DMI, GoI",
+      "fields": {
+        "State": {
+          "type": "string"
+        },
+        "District": {
+          "type": "string"
+        },
+        "Market": {
+          "type": "string"
+        },
+        "Modal_Price_Rs_Qtl": {
+          "type": "float",
+          "unit": "Rs/quintal",
+          "range": [
+            500,
+            25000
+          ]
+        }
+      }
+    },
+    "clean_soil_fertility": {
+      "path": "data/processed/clean_soil_fertility.csv",
+      "rows": 1070,
+      "columns": 12,
+      "publisher": "Soil Health Card Portal (DAC&FW)",
+      "fields": {
+        "pH": {
+          "type": "float",
+          "unit": "pH scale"
+        },
+        "EC": {
+          "type": "float",
+          "unit": "dS/m"
+        },
+        "OC": {
+          "type": "float",
+          "unit": "percent"
+        },
+        "P": {
+          "type": "float",
+          "unit": "kg/ha"
+        },
+        "K": {
+          "type": "float",
+          "unit": "kg/ha"
+        },
+        "soil_fertility_class": {
+          "type": "string",
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      }
+    }
+  }
+}

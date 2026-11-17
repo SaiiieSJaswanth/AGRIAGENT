@@ -1,0 +1,26 @@
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 5
+================================================================================
+TITLE: Machine Learning-Based Crop Recommendation System
+YEAR: 2024
+AUTHORS: IEEE ISML Conference Authors
+VENUE / PUBLISHER: IEEE ISML / IEEE Xplore (DOI: 10.1109/ISML60050.2024.11007334)
+
+1. PROBLEM STATEMENT:
+Fragmented agricultural decision systems that evaluate crop choices without synthesizing heterogeneous environmental, spatial, and meteorological data.
+
+2. METHODOLOGY:
+Surveyed and synthesized multi-source agricultural pipelines evaluating IoT telemetry, remote-sensing indices, and climate observations for predictive modeling.
+
+3. DATASET:
+Multi-source environmental dataset combining geospatial coordinates, seasonal weather parameters, and soil fertility metrics.
+
+4. TOOLS & TECHNIQUES:
+Ensemble Classifiers, Gradient Boosting, Geospatial Analysis, Python.
+
+5. MAJOR FINDINGS & ACCURACY:
+Demonstrated that integrating multi-modal data streams significantly enhances recommendation robustness compared to single-domain models.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Identified the open challenge of integrating heterogeneous information into a reproducible, low-latency, and accessible farmer advisory system.
+================================================================================

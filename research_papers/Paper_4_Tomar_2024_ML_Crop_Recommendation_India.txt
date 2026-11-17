@@ -1,0 +1,26 @@
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 4
+================================================================================
+TITLE: ML-based crop recommendation for agricultural and horticultural crops in India
+YEAR: 2024
+AUTHORS: Vinay Tomar, Gaurav Sharma, Rahul Rajkumar, Akanksha Singh, Sarvendra Singh Dhakare, Kamlesh Kumar
+VENUE / PUBLISHER: IEEE ICAC2N / IEEE Xplore (DOI: 10.1109/ICAC2N63387.2024.10895212)
+
+1. PROBLEM STATEMENT:
+Mismatch between agricultural land capability and crop selection across diverse agro-climatic zones in India.
+
+2. METHODOLOGY:
+Evaluated multiple machine learning classifiers to predict suitable agricultural and horticultural crops using multi-parameter soil and environmental vectors.
+
+3. DATASET:
+Indian multi-attribute crop dataset covering major staple, cash, and horticultural crop classes.
+
+4. TOOLS & TECHNIQUES:
+SVM, XGBoost, Random Forest, KNN, Decision Tree, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Tree-based classifiers effectively resolved non-linear relationships between soil chemical attributes and crop physiological suitability.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Risk of overgeneralizing benchmark performance across varied administrative districts and seasons without validating historical regional cultivation area.
+================================================================================

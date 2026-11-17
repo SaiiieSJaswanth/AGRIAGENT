@@ -1,0 +1,41 @@
+{
+  "model": "RandomForestClassifier",
+  "task": "soil_health_assessment",
+  "dataset": "data/processed/clean_soil_fertility.csv",
+  "features": [
+    "pH",
+    "EC",
+    "S",
+    "Zn",
+    "Fe",
+    "Mn",
+    "Cu"
+  ],
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "test_metrics": {
+    "accuracy": 0.780373831775701,
+    "f1_weighted": 0.7714953809132273
+  },
+  "all_models_compared": {
+    "DummyClassifier": {
+      "accuracy": 0.7710280373831776,
+      "f1_weighted": 0.6713436737109462
+    },
+    "LogisticRegression": {
+      "accuracy": 0.4953271028037383,
+      "f1_weighted": 0.5490296299529576
+    },
+    "DecisionTreeClassifier": {
+      "accuracy": 0.5186915887850467,
+      "f1_weighted": 0.5663497384596532
+    },
+    "RandomForestClassifier": {
+      "accuracy": 0.780373831775701,
+      "f1_weighted": 0.7714953809132273
+    }
+  }
+}

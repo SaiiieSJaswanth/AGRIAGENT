@@ -1,0 +1,52 @@
+{
+  "apy_crop_production.csv": {
+    "status": "Downloaded",
+    "shape": [
+      246091,
+      7
+    ],
+    "size_bytes": 15316741,
+    "sha256": "5b2637058ca4aff2ef7c0e0f2f391bca712300d082693b585f489871fd91d520",
+    "description": "District-wise season-wise crop area, production, and yield (1997-2015) from Ministry of Agriculture & Farmers Welfare / DESAgri / data.gov.in"
+  },
+  "imd_district_rainfall_normal.csv": {
+    "status": "Downloaded",
+    "shape": [
+      641,
+      19
+    ],
+    "size_bytes": 68633,
+    "sha256": "8936ff42cc85491e65264c9b111d01314501e9b48116af32d1e32997a7f46212",
+    "description": "District-wise monthly, seasonal, and annual normal rainfall from India Meteorological Department (IMD)"
+  },
+  "imd_subdivision_rainfall_1901_2015.csv": {
+    "status": "Downloaded",
+    "shape": [
+      4116,
+      19
+    ],
+    "size_bytes": 523998,
+    "sha256": "15db66893f77b077bf2b0290832ed91befea1dc92d44b15c86a3f7e873c3da1a",
+    "description": "Subdivision-wise historical monthly and annual rainfall (1901-2015) from India Meteorological Department (IMD)"
+  },
+  "soil_health_card_samples.csv": {
+    "status": "Downloaded",
+    "shape": [
+      1980,
+      10
+    ],
+    "size_bytes": 106530,
+    "sha256": "d2188ec1b58a50fd08a5907cb05e2101f76c6735f9f086cb2ea82d6557a9c3ae",
+    "description": "Measured laboratory Soil Health Card test records (pH, EC, OC, P, K, S, Zn, Fe, Mn, Cu) scraped from soilhealth.dac.gov.in"
+  },
+  "agmarknet_mandi_prices_sample.csv": {
+    "status": "Downloaded",
+    "shape": [
+      89346,
+      10
+    ],
+    "size_bytes": 7642746,
+    "sha256": "efdb80bda7c521551dcfce5468a2cbc6dc37c974cc5b0577d902947c52155e69",
+    "description": "Wholesale mandi arrival and modal prices from AGMARKNET / Directorate of Marketing & Inspection"
+  }
+}

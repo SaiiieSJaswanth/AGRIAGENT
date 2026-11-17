@@ -1,0 +1,120 @@
+====================================================================================================
+AGRIAGENT — OFFICIAL GOVERNMENT SCHEMES DATA SOURCES AND PORTAL INVENTORY
+====================================================================================================
+Academic Project: AGRIAGENT (Real-World Agricultural Intelligence System for India)
+Purpose: Documenting official government website sources utilized for agricultural welfare schemes
+Verification Standards: Indian Open Government Data (OGD), National Portal of India (india.gov.in)
+Data Collection Mechanism: Web scraping via Python requests & BeautifulSoup4 + Official Gazette cross-check
+====================================================================================================
+
+1. CENTRAL GOVERNMENT SCHEMES & OFFICIAL PORTALS
+----------------------------------------------------------------------------------------------------
+1. Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)
+   - Official Portal URL       : https://pmkisan.gov.in/
+   - Ministry / Department     : Ministry of Agriculture & Farmers Welfare, Department of Agriculture & Farmers Welfare (DA&FW)
+   - Implementing Agency       : Government of India / State Agriculture Departments
+   - Primary Purpose           : Direct Income Support of Rs. 6,000 per year (in 3 installments of Rs. 2,000) directly into bank accounts via DBT.
+   - Eligible Beneficiaries    : All landholding farmer families having cultivable land in their names (subject to exclusion criteria).
+   - Source Web Page Sections  : https://pmkisan.gov.in/Documents.aspx, https://pmkisan.gov.in/BeneficiaryStatus_New.aspx
+
+2. Pradhan Mantri Fasal Bima Yojana (PMFBY)
+   - Official Portal URL       : https://pmfby.gov.in/
+   - Ministry / Department     : Ministry of Agriculture & Farmers Welfare
+   - Primary Purpose           : Comprehensive crop insurance coverage against non-preventable natural risks (drought, flood, pest attack).
+   - Premium Rates             : Maximum 2.0% for Kharif crops, 1.5% for Rabi crops, and 5.0% for annual commercial/horticultural crops.
+   - Eligible Beneficiaries    : All farmers growing notified crops in notified areas (both loanee and non-loanee farmers).
+   - Source Web Page Sections  : https://pmfby.gov.in/guidelines, https://pmfby.gov.in/farmerCorner
+
+3. Kisan Credit Card (KCC) Scheme
+   - Official Portal URL       : https://www.myscheme.gov.in/schemes/kcc
+   - Implementing Agency       : Reserve Bank of India (RBI) / National Bank for Agriculture and Rural Development (NABARD)
+   - Primary Purpose           : Timely institutional credit at concessional interest rate (effective 4% per annum with prompt repayment incentive).
+   - Credit Limit              : Revolving credit limit based on landholding and cropping pattern.
+   - Eligible Beneficiaries    : Individual farmers, joint borrowers, tenant farmers, oral lessees, sharecroppers, Self Help Groups (SHGs).
+
+4. Soil Health Card (SHC) Scheme
+   - Official Portal URL       : https://soilhealth.dac.gov.in/
+   - Ministry / Department     : Ministry of Agriculture & Farmers Welfare
+   - Primary Purpose           : Periodic issuance of soil nutrient status reports (12 parameters) every 2 years with customized dosage advisories.
+   - Cost to Farmer            : 100% Free / Government funded.
+   - Eligible Beneficiaries    : All operational landholders across India.
+
+5. Sub-Mission on Agricultural Mechanization (SMAM)
+   - Official Portal URL       : https://agrimachinery.nic.in/
+   - Ministry / Department     : Ministry of Agriculture & Farmers Welfare
+   - Primary Purpose           : Capital subsidy (40% to 50%) for purchasing tractors, power tillers, rotavators, and harvesting machinery.
+   - Special Category Benefits : Up to 50% subsidy for SC, ST, Small/Marginal farmers, and Women farmers; 40% for other farmers.
+
+6. Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) - Per Drop More Crop (PDMC)
+   - Official Portal URL       : https://pmksy.gov.in/
+   - Implementing Departments  : Ministry of Jal Shakti & Department of Agriculture & Farmers Welfare
+   - Primary Purpose           : Subsidy for drip and sprinkler micro-irrigation systems (up to 55% for Small/Marginal; 45% for Other farmers).
+   - Objective                 : Enhancing on-farm water use efficiency and precision moisture delivery.
+
+7. Agriculture Infrastructure Fund (AIF)
+   - Official Portal URL       : https://agriinfra.dac.gov.in/
+   - Ministry / Department     : Ministry of Agriculture & Farmers Welfare
+   - Primary Purpose           : Medium-long term debt financing facility with 3% per annum interest subvention for post-harvest management infrastructure.
+   - Eligible Beneficiaries    : Primary Agricultural Credit Societies (PACS), Marketing Cooperative Societies, FPOs, SHGs, Agri-entrepreneurs.
+
+8. Paramparagat Krishi Vikas Yojana (PKVY)
+   - Official Portal URL       : https://pgsindia-ncof.gov.in/
+   - Ministry / Department     : Ministry of Agriculture & Farmers Welfare (National Centre of Organic Farming - NCOF)
+   - Primary Purpose           : Financial assistance of Rs. 50,000 per hectare for cluster-based organic farming, certification, and value addition.
+
+9. Pradhan Mantri Kisan Maan Dhan Yojana (PM-KMY)
+   - Official Portal URL       : https://maandhan.in/
+   - Implementing Agency       : Life Insurance Corporation of India (LIC) & Ministry of Agriculture & Farmers Welfare
+   - Primary Purpose           : Contributory pension scheme assuring Rs. 3,000 monthly pension upon attaining 60 years of age.
+   - Eligible Beneficiaries    : Small and marginal farmers aged 18 to 40 years holding cultivable land up to 2 hectares (5 acres).
+
+----------------------------------------------------------------------------------------------------
+2. STATE GOVERNMENT SCHEMES & OFFICIAL PORTALS
+----------------------------------------------------------------------------------------------------
+1. Karnataka State Schemes
+   - Portals: https://raitamitra.karnataka.gov.in/ & https://karnataka.gov.in/
+   - Schemes Sourced:
+     * Krishi Bhagya: Construction of farm ponds (Krishi Honda) with polythene lining and diesel pump-sets (up to 80% subsidy for SC/ST, 50% for General).
+     * Raitha Shakti: Diesel subsidy of Rs. 250 per acre (maximum Rs. 1,250 for 5 acres) credited directly via DBT to mechanization costs.
+     * Karnataka Raitha Siri: Incentive of Rs. 10,000 per hectare for growing minor millets (Ragi, Jowar, Foxtail, Little, Kodo, Barnyard, Proso millets).
+
+2. Maharashtra State Schemes
+   - Portals: https://mahadbt.maharashtra.gov.in/ & https://krishi.maharashtra.gov.in/
+   - Schemes Sourced:
+     * MahaDBT Farmer Schemes: Consolidated portal for farm mechanization, micro-irrigation, orchard plantation, and shade-net houses.
+     * Nanaji Deshmukh Krishi Sanjivani Prakalp (PoCRA): Climate-resilient agriculture project for Marathwada and Vidarbha drought-prone districts.
+     * Magel Tyala Shet-Tale: On-demand farm pond subsidy scheme.
+
+3. Uttar Pradesh State Schemes
+   - Portals: http://upagriculture.com/ & https://upagripardarshi.gov.in/
+   - Schemes Sourced:
+     * UP Krishi Yantra Subsidy: Lottery-based transparent portal for modern implement subsidies.
+     * UP Kisan Karj Rahat (Debt Relief Program): Relief for small and marginal farm loans.
+     * UP Solar Pump Yojana (PM-KUSUM Component-B): Subsidies for standalone solar agriculture pumps.
+
+4. Andhra Pradesh State Schemes
+   - Portals: https://ysrrythubharosa.ap.gov.in/ & https://apagrisnet.gov.in/
+   - Schemes Sourced:
+     * YSR Rythu Bharosa: Financial assistance of Rs. 13,500 per year per farmer family (including PM-KISAN component).
+     * Free Crop Insurance Scheme: 100% state-funded crop insurance premium covering all operational farmers.
+
+5. Telangana State Schemes
+   - Portals: https://rythubandhu.telangana.gov.in/ & https://agri.telangana.gov.in/
+   - Schemes Sourced:
+     * Rythu Bandhu: Agricultural investment support of Rs. 10,000 per acre per year (Rs. 5,000 per crop season) for seed and input purchase.
+     * Rythu Bima: 100% state-funded life insurance coverage of Rs. 5,00,000 for registered landholding farmers.
+
+6. Tamil Nadu State Schemes
+   - Portals: https://www.agritech.tnau.ac.in/ & https://tnhorticulture.tn.gov.in/
+   - Schemes Sourced:
+     * Chief Minister Solar Powered Pump-sets Scheme: Up to 70% capital subsidy for off-grid solar pumps.
+     * Uzhavan App Integrated Schemes: State seeds subsidy, bio-fertilizer distribution, and farm machinery hire.
+
+----------------------------------------------------------------------------------------------------
+3. NATIONAL DATA CLEARINGHOUSES & REFERENCE HUBS
+----------------------------------------------------------------------------------------------------
+- National Portal of India: https://india.gov.in/topics/agriculture
+- Direct Benefit Transfer (DBT) Bharat Portal: https://dbtbharat.gov.in/
+- Vikaspedia Agriculture Knowledge Hub: https://vikaspedia.in/agriculture/policies-and-schemes
+- ICAR Institutional Portals: https://icar.org.in/
+====================================================================================================

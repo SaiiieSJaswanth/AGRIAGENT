@@ -1,0 +1,26 @@
+================================================================================
+IEEE RESEARCH PAPER DOSSIER - PAPER 6
+================================================================================
+TITLE: Soil-Based Crop Recommendation System Using Machine Learning
+YEAR: 2024
+AUTHORS: Kristuboyina Abhinov, Kornepati Sai Saranya, Mannem Mahendra, et al.
+VENUE / PUBLISHER: IEEE ADICS / IEEE Xplore (DOI: 10.1109/ADICS58448.2024.10533537)
+
+1. PROBLEM STATEMENT:
+Topsoil nutrient depletion and crop failure caused by planting without prior soil chemical analysis.
+
+2. METHODOLOGY:
+Implemented the Soil-Based Crop Recommendation System (SBCRS) incorporating macronutrients, micronutrients, and soil pH to evaluate crop compatibility.
+
+3. DATASET:
+Laboratory soil testing dataset covering pH, Electrical Conductivity, Organic Carbon, Phosphorus, Potassium, and micronutrients.
+
+4. TOOLS & TECHNIQUES:
+Supervised classification algorithms, Pandas, Scikit-learn.
+
+5. MAJOR FINDINGS & ACCURACY:
+Demonstrated that soil pH is a primary limiting factor for nutrient assimilation; acidic (pH < 6.0) or alkaline (pH > 8.0) soils impede uptake regardless of fertilizer dosage.
+
+6. LIMITATIONS / OPEN PROBLEMS (FOR PROPOSED WORK):
+Needed to pair crop prediction with transparent soil-health diagnostics and practical corrective nutrient guidance (lime/gypsum amendments).
+================================================================================

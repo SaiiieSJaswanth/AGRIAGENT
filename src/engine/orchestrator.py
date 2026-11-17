@@ -1,0 +1,156 @@
+"""
+Production Orchestrator for AGRIAGENT
+Coordinates the FIVE core agricultural intelligence modules:
+1. Intelligent Crop Recommendation (Hybrid APY Ranking + State Catalog + Internal Random Forest ML)
+2. Comprehensive Soil Health Assessment (Hybrid ICAR-IISS Standard + Internal Random Forest ML)
+3. Crop-Specific Fertilizer Recommendation (STCR Agronomic Dosage Engine + ML Regime Classifier)
+4. Intelligent Irrigation Recommendation (Decision Tree ML Classifier + FAO-56 Water Balance)
+5. Government Agricultural Scheme Intelligence (Deterministic Central & State Scheme Matcher)
+"""
+from pathlib import Path
+from typing import Dict, Any, Optional
+import pandas as pd
+
+from src.config.settings import (
+    KNOWLEDGE_PATH, STATE_CROP_CATALOG_PATH, STATE_SCHEMES_PATH
+)
+from src.data.crop_catalog import load_state_crop_catalog, crops_for_state
+from src.agr_agent.scheme_loader import load_schemes
+from src.agr_agent.scheme_matcher import match_schemes
+from src.agr_agent.document_checker import collect_documents
+from src.engine.inference import (
+    recommend_crops_from_history,
+    predict_crop_recommendation_ml_hidden,
+    get_district_rainfall
+)
+from src.models.soil_fertility import evaluate_soil_health
+from src.models.fertilizer import calculate_fertilizer_guidance
+from src.models.irrigation import evaluate_irrigation_needs
+
+def run_agriagent(profile=None, df=None) -> Dict[str, Any]:
+    """
+    Executes the comprehensive AGRIAGENT 5-module agricultural advisory pipeline for a given farmer profile.
+    """
+    if profile is None and df is not None:
+        profile = df
+    if profile is None:
+        raise ValueError("A valid FarmerProfile must be provided to run_agriagent.")
+
+    p_dict = profile.to_dict() if hasattr(profile, "to_dict") else profile
+    state = p_dict.get("state", "National")
+    district = p_dict.get("district", "General")
+    soil_type = p_dict.get("soil_type", "Loam")
+    land_area_acres = float(p_dict.get("land_area_acres") or 2.5)
+    current_crop = p_dict.get("current_crop") or "Rice"
+    season = p_dict.get("season") or "Kharif"
+    irrigation_available = bool(p_dict.get("irrigation_available", True))
+
+    report: Dict[str, Any] = {
+        "farmer_profile": p_dict,
+        "location_intelligence": {},
+        "crop_recommendation": {},
+        "soil_health": {},
+        "fertilizer_guidance": {},
+        "irrigation_guidance": {},
+        "support_matches": [],
+        "documents": [],
+        "limitations": [
+            "Farmer-facing crop shortlist is ranked from historical APY crop-area records (DESAgri). An experimental APY-trained Random Forest crop classifier also executes internally in shadow mode without altering the displayed ranking.",
+            "Soil health assessments utilize official ICAR-IISS diagnostic threshold ratings with an internal Random Forest validation layer.",
+            "Fertilizer recommendations are calculated via ICAR Soil Test Crop Response (STCR) principles, commercial NPK conversions, and a trained ML classifier.",
+            "Irrigation requirements are classified via an interpretable Decision Tree trained on FAO-56 water balance and IMD climatological normal rainfall.",
+            "Government scheme matches indicate potential eligibility based on official published criteria; formal approval is subject to competent authorities."
+        ]
+    }
+
+    # 1. District Climate & Rainfall Normals (IMD 1951-2000 Climatological Normal)
+    rainfall_info = get_district_rainfall(state, district)
+    report["location_intelligence"]["rainfall_normals"] = rainfall_info
+    annual_rf = rainfall_info["annual_normal_mm"] if rainfall_info else 1050.0
+    seasonal_rf = rainfall_info["kharif_normal_mm"] if rainfall_info and "kharif" in season.lower() else (
+        rainfall_info["rabi_normal_mm"] if rainfall_info else 750.0
+    )
+
+    # 2. State Crop Catalogue (Ministry of Agriculture)
+    crop_catalog = load_state_crop_catalog(STATE_CROP_CATALOG_PATH) if Path(STATE_CROP_CATALOG_PATH).exists() else []
+    state_crops = crops_for_state(crop_catalog, state)
+    report["location_intelligence"]["state_crop_catalog"] = state_crops
+
+    # 3A. Module 1: Internal Hidden ML Crop Model Execution (Random Forest)
+    try:
+        internal_crop_ml = predict_crop_recommendation_ml_hidden(state=state, district=district, season=season)
+    except Exception as exc:
+        from src.utils.logging import get_logger
+        get_logger("agriagent.crop_ml").warning("Internal crop ML execution failed: %s", exc)
+        internal_crop_ml = {"status": "error", "error": str(exc)}
+
+    # 3B. Module 1: Farmer-Facing Crop Shortlist (Historical APY Ranking)
+    try:
+        crop_rec = recommend_crops_from_history(
+            state=state, district=district, season=season, top_k=5
+        )
+        report["crop_recommendation"] = crop_rec
+        if not p_dict.get("current_crop") and crop_rec.get("top_crop"):
+            current_crop = crop_rec["top_crop"]
+    except Exception as exc:
+        report["crop_recommendation"] = {"status": "error", "error": str(exc)}
+
+    # 4. Module 2: Soil Health Assessment (Hybrid ICAR-IISS Standard + Internal Random Forest)
+    ph_val = p_dict.get("soil_ph") or 6.8
+    ec_val = p_dict.get("electrical_conductivity_ds_m") or 0.35
+    oc_val = p_dict.get("organic_carbon_percent") or 0.60
+    p_val = p_dict.get("phosphorus_kg_ha") or 16.0
+    k_val = p_dict.get("potassium_kg_ha") or 180.0
+
+    soil_eval = evaluate_soil_health(
+        ph=ph_val,
+        ec=ec_val,
+        oc=oc_val,
+        p=p_val,
+        k=k_val,
+        s=p_dict.get("sulfur_ppm"),
+        zn=p_dict.get("zinc_ppm"),
+        fe=p_dict.get("iron_ppm"),
+        mn=p_dict.get("manganese_ppm"),
+        cu=p_dict.get("copper_ppm")
+    )
+    report["soil_health"] = soil_eval
+
+    # 5. Module 3: Crop-Specific Fertilizer Advisory (ML Regime Classifier + Dynamic STCR Dosing)
+    n_rating = soil_eval.get("parameter_evaluations", {}).get("OC", {}).get("rating", "Medium")
+    p_rating = soil_eval.get("parameter_evaluations", {}).get("P", {}).get("rating", "Medium")
+    k_rating = soil_eval.get("parameter_evaluations", {}).get("K", {}).get("rating", "Medium")
+
+    fert_eval = calculate_fertilizer_guidance(
+        crop_name=current_crop,
+        n_rating=n_rating,
+        p_rating=p_rating,
+        k_rating=k_rating,
+        land_area_acres=land_area_acres,
+        ph=ph_val,
+        ec=ec_val,
+        oc=oc_val,
+        p_soil=p_val,
+        k_soil=k_val
+    )
+    report["fertilizer_guidance"] = fert_eval
+
+    # 6. Module 4: Intelligent Irrigation Guidance (Decision Tree ML + FAO-56 Water Balance)
+    irrig_eval = evaluate_irrigation_needs(
+        crop_name=current_crop,
+        season=season,
+        seasonal_rainfall_mm=seasonal_rf,
+        irrigation_available=irrigation_available,
+        soil_type=soil_type
+    )
+    report["irrigation_guidance"] = irrig_eval
+
+    # 7. Module 5: Government Welfare Scheme Matching (Central & State Schemes)
+    central_schemes = load_schemes(KNOWLEDGE_PATH) if Path(KNOWLEDGE_PATH).exists() else []
+    state_schemes = load_schemes(STATE_SCHEMES_PATH) if Path(STATE_SCHEMES_PATH).exists() else []
+    all_schemes = central_schemes + state_schemes
+    matches = match_schemes(p_dict, all_schemes)
+    report["support_matches"] = matches
+    report["documents"] = collect_documents(matches)
+
+    return report

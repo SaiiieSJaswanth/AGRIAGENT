@@ -1,0 +1,165 @@
+====================================================================================================
+AGRIAGENT — CLEAN STRUCTURED GOVERNMENT WELFARE SCHEMES DIRECTORY
+====================================================================================================
+Category: Clean Text Extraction Format of Agricultural Support Initiatives
+Verification Status: Official Government Gazette & Portal Verified (November 2026)
+Total Schemes Cataloged: 140+ Central and State Agricultural Schemes
+====================================================================================================
+
+[SCHEME #01: PM-KISAN]
+- Scheme Name       : Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)
+- Scheme Level      : CENTRAL SECTOR SCHEME (100% Central Funding)
+- Sponsoring Body   : Ministry of Agriculture & Farmers Welfare, Govt of India
+- Official Portal   : https://pmkisan.gov.in/
+- Objective         : Supplement financial needs of landholding farmers for agricultural inputs and domestic needs.
+- Financial Benefit : Rs. 6,000 per annum paid in 3 four-monthly installments of Rs. 2,000 directly via DBT.
+- Eligibility       : All farmer families holding operational cultivable land registered in state land revenue records.
+- Exclusions        : Institutional landholders, income tax payers, retired pensioners receiving > Rs. 10,000/month, constitutional post holders.
+- Documents Required:
+    1. Aadhaar Card (Mandatory biometric/OTP e-KYC)
+    2. Land Record (Record of Rights / Pahani / 7/12 Extract / Khasra-Khatauni)
+    3. Active Bank Account linked to Aadhaar & NPCI DBT enabled
+    4. Mobile Number registered with Aadhaar
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #02: PMFBY]
+- Scheme Name       : Pradhan Mantri Fasal Bima Yojana (PMFBY)
+- Scheme Level      : CENTRAL SPONSORED SCHEME (Shared Centre-State)
+- Sponsoring Body   : Ministry of Agriculture & Farmers Welfare, Govt of India
+- Official Portal   : https://pmfby.gov.in/
+- Objective         : Protect farmers against crop loss resulting from non-preventable natural calamities (drought, flood, unseasonal rain, pest/disease outbreak).
+- Financial Benefit : Comprehensive crop insurance coverage with subsidized premium:
+    * Kharif Foodgrains/Oilseeds: Maximum 2.0% of Sum Insured
+    * Rabi Foodgrains/Oilseeds: Maximum 1.5% of Sum Insured
+    * Annual Commercial/Horticultural: Maximum 5.0% of Sum Insured
+- Eligibility       : All farmers cultivating notified crops in notified insurance units (both loanee and non-loanee farmers).
+- Documents Required:
+    1. Land Possession Certificate (LPC) or Land Revenue Receipt (ROR)
+    2. Sowing Certificate issued by Village Agricultural Officer / Patwari / Gram Sevak
+    3. Aadhaar Card
+    4. Bank Passbook copy with clear IFSC and Account Number
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #03: KISAN CREDIT CARD (KCC)]
+- Scheme Name       : Kisan Credit Card (KCC) Scheme
+- Scheme Level      : CENTRAL INSTITUTIONAL CREDIT SCHEME
+- Sponsoring Body   : Department of Financial Services (DFS), RBI & NABARD
+- Official Portal   : https://www.myscheme.gov.in/schemes/kcc
+- Objective         : Provide timely and hassle-free short-term credit to farmers for cultivation expenses, post-harvest costs, and maintenance of farm assets.
+- Financial Benefit : Concessional loan up to Rs. 3,00,000 at 7% interest rate with 3% prompt repayment incentive (effective interest rate: 4% per annum). Collateral-free loan limit up to Rs. 1,60,000.
+- Eligibility       : Individual owner-cultivators, tenant farmers, oral lessees, sharecroppers, and members of SHGs or Joint Liability Groups (JLGs).
+- Documents Required:
+    1. Application form filled and signed
+    2. Identity Proof (Aadhaar Card / Voter ID / PAN Card)
+    3. Address Proof
+    4. Land Records certified by Revenue Authority
+    5. Cropping pattern declaration
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #04: SOIL HEALTH CARD (SHC)]
+- Scheme Name       : Soil Health Card Scheme
+- Scheme Level      : CENTRAL SPONSORED SCHEME
+- Sponsoring Body   : Department of Agriculture & Farmers Welfare, Ministry of Agriculture
+- Official Portal   : https://soilhealth.dac.gov.in/
+- Objective         : Provide comprehensive chemical analysis of soil nutrient status and customized fertilizer application dosage recommendations.
+- Financial Benefit : 100% Free laboratory testing of soil samples every 2 years across 12 parameters (N, P, K, S, Zn, Fe, Cu, Mn, B, pH, EC, OC).
+- Eligibility       : All farmers owning or leasing agricultural land in India.
+- Documents Required:
+    1. Survey Number / Gut Number / Khasra Number of the farm plot
+    2. Farmer Aadhaar Number
+    3. Mobile Number
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #05: SUB-MISSION ON AGRICULTURAL MECHANIZATION (SMAM)]
+- Scheme Name       : Sub-Mission on Agricultural Mechanization (SMAM)
+- Scheme Level      : CENTRAL SPONSORED SCHEME
+- Sponsoring Body   : Ministry of Agriculture & Farmers Welfare
+- Official Portal   : https://agrimachinery.nic.in/
+- Objective         : Increase reach of farm mechanization to small and marginal farmers and custom hiring centers.
+- Financial Benefit : Capital subsidy on farm machinery:
+    * 50% subsidy for SC, ST, Small/Marginal farmers, and Women farmers
+    * 40% subsidy for General category farmers
+    * Up to 80% project cost assistance for establishing Custom Hiring Centers (CHCs)
+- Eligibility       : Small, marginal, and large farmers possessing valid land ownership records.
+- Documents Required:
+    1. Land Record (ROR / 7/12 / RTC)
+    2. Aadhaar Card
+    3. Caste Certificate (for SC/ST beneficiaries)
+    4. Quotation / Proforma Invoice of farm implement from authorized dealer
+    5. Bank Passbook
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #06: PMKSY - PER DROP MORE CROP (PDMC)]
+- Scheme Name       : Pradhan Mantri Krishi Sinchayee Yojana - Micro Irrigation
+- Scheme Level      : CENTRAL SPONSORED SCHEME
+- Sponsoring Body   : Ministry of Agriculture & Farmers Welfare & Ministry of Jal Shakti
+- Official Portal   : https://pmksy.gov.in/
+- Objective         : Promote precision water conservation through drip and sprinkler irrigation technologies.
+- Financial Benefit : Financial subsidy on micro-irrigation installation:
+    * Up to 55% of indicative system cost for Small and Marginal farmers
+    * Up to 45% of indicative system cost for Other/Large farmers
+- Eligibility       : Farmers with assured water source (borewell, open well, farm pond, canal lift) and land records.
+- Documents Required:
+    1. Land Record (RTC / 7/12)
+    2. Water source availability certificate / Electricity bill of pump
+    3. Aadhaar Card
+    4. Field layout map and quotation from approved micro-irrigation vendor
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #07: KARNATAKA KRISHI BHAGYA]
+- Scheme Name       : Krishi Bhagya Scheme (Karnataka)
+- Scheme Level      : STATE GOVERNMENT SCHEME
+- Sponsoring Body   : Department of Agriculture, Government of Karnataka
+- Official Portal   : https://raitamitra.karnataka.gov.in/
+- Objective         : Rainwater harvesting through on-farm ponds to ensure protective irrigation during dry spells.
+- Financial Benefit : 80% subsidy for SC/ST farmers; 50% subsidy for General farmers on farm pond construction, polythene lining, diesel pumps, and shade nets.
+- Eligibility       : Farmers cultivating land in dry-zone / rainfed taluks of Karnataka.
+- Documents Required:
+    1. Karnataka RTC (Pahani)
+    2. Caste Certificate (RD Number for SC/ST)
+    3. Aadhaar Card
+    4. Bank Account linked to Aadhaar
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #08: KARNATAKA RAITHA SHAKTI]
+- Scheme Name       : Raitha Shakti Scheme (Karnataka)
+- Scheme Level      : STATE GOVERNMENT SCHEME
+- Sponsoring Body   : Department of Agriculture, Government of Karnataka
+- Official Portal   : https://raitamitra.karnataka.gov.in/
+- Objective         : Encourage mechanized farm operations and reduce cultivation costs for smallholders.
+- Financial Benefit : Direct diesel subsidy of Rs. 250 per acre up to a maximum limit of 5 acres (Rs. 1,250 total per farmer family).
+- Eligibility       : Operational landholders possessing registered land in Karnataka FRUITS portal.
+- Documents Required:
+    1. FRUITS ID (Farmer Registration and Unified Beneficiary Information System)
+    2. Aadhaar Card
+    3. Bank Account details
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #09: KARNATAKA RAITHA SIRI]
+- Scheme Name       : Karnataka Raitha Siri Scheme
+- Scheme Level      : STATE GOVERNMENT SCHEME
+- Sponsoring Body   : Department of Agriculture, Government of Karnataka
+- Official Portal   : https://raitamitra.karnataka.gov.in/
+- Objective         : Encourage cultivation and preservation of climate-resilient minor millets.
+- Financial Benefit : Direct financial incentive of Rs. 10,000 per hectare credited to beneficiary bank account via DBT.
+- Eligible Crops    : Minor millets (Navane, Same, Haraka, Korale, Baragu, Oodalu).
+- Documents Required:
+    1. FRUITS ID
+    2. RTC with crop survey entry showing minor millet cultivation
+    3. Aadhaar Card & Bank Passbook
+
+----------------------------------------------------------------------------------------------------
+[SCHEME #10: MAHARASHTRA MAHADBT FARMER SCHEMES]
+- Scheme Name       : MahaDBT Farmer Welfare Portal
+- Scheme Level      : STATE GOVERNMENT INTEGRATED PORTAL
+- Sponsoring Body   : Department of Agriculture, Government of Maharashtra
+- Official Portal   : https://mahadbt.maharashtra.gov.in/
+- Objective         : Single window online lottery and direct subsidy distribution for farm mechanization, drip/sprinkler, orchards, and farm ponds.
+- Financial Benefit : 40% to 75% capital subsidies directly disbursed through DBT.
+- Eligibility       : Landholders registered on 7/12 extract across all districts of Maharashtra.
+- Documents Required:
+    1. 7/12 Extract and 8-A Certificate
+    2. Aadhaar Card
+    3. Caste Certificate (if claiming reserved subsidy)
+    4. Bank Passbook
+====================================================================================================

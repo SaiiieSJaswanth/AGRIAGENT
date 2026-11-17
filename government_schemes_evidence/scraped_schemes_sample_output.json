@@ -1,0 +1,97 @@
+[
+  {
+    "scheme_name": "PM-KISAN",
+    "portal_url": "https://pmkisan.gov.in/",
+    "level": "CENTRAL",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "timestamp": "2026-11-16 18:40:00",
+    "http_status_code": 200,
+    "page_title": "PM Kisan Samman Nidhi | Department of Agriculture & Farmers Welfare | MoA&FW",
+    "headings": [
+      "Pradhan Mantri Kisan Samman Nidhi",
+      "About the Scheme",
+      "Direct Benefit Transfer (DBT) Guidelines",
+      "Exclusion Categories for Higher Economic Status"
+    ],
+    "key_paragraphs": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a Central Sector Scheme with 100% funding from Government of India.",
+      "Under the scheme, income support of Rs. 6000/- per year in three equal installments of Rs. 2000/- each will be provided to all landholding farmer families.",
+      "The fund will be directly transferred to the bank accounts of the beneficiaries through Direct Benefit Transfer (DBT) mode."
+    ],
+    "bullet_points": [
+      "All landholding farmer families who have cultivable landholding in their names are eligible.",
+      "Mandatory Aadhaar-based e-KYC authentication required.",
+      "Bank accounts must be seeded with Aadhaar and mapped with NPCI.",
+      "Institutional landholders and income tax payees are strictly excluded."
+    ]
+  },
+  {
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "portal_url": "https://pmfby.gov.in/",
+    "level": "CENTRAL",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "timestamp": "2026-11-16 18:40:02",
+    "http_status_code": 200,
+    "page_title": "Pradhan Mantri Fasal Bima Yojana (PMFBY) | Ministry of Agriculture & Farmers Welfare",
+    "headings": [
+      "Crop Insurance Scheme Details",
+      "Coverage of Crops and Stages of Risk",
+      "Subsidized Farmer Premium Schedule"
+    ],
+    "key_paragraphs": [
+      "PMFBY provides comprehensive crop insurance coverage from pre-sowing to post-harvest losses against non-preventable natural risks.",
+      "Farmer premium share is capped at 2% for Kharif food and oilseed crops, 1.5% for Rabi crops, and 5% for commercial/horticultural crops."
+    ],
+    "bullet_points": [
+      "Available for all farmers including sharecroppers and tenant farmers.",
+      "Post-harvest losses covered up to 14 days for crops in cut-and-spread condition.",
+      "Claims processed directly into Aadhaar-linked accounts."
+    ]
+  },
+  {
+    "scheme_name": "Soil Health Card Scheme",
+    "portal_url": "https://soilhealth.dac.gov.in/",
+    "level": "CENTRAL",
+    "ministry": "Ministry of Agriculture & Farmers Welfare (DA&FW)",
+    "timestamp": "2026-11-16 18:40:04",
+    "http_status_code": 200,
+    "page_title": "Soil Health Card Portal | Ministry of Agriculture & Farmers Welfare",
+    "headings": [
+      "National Soil Health Card Scheme",
+      "Cycle-wise Soil Testing & Nutrient Recommendations",
+      "Key Soil Health Chemical Parameters"
+    ],
+    "key_paragraphs": [
+      "The scheme promotes soil testing to issue Soil Health Cards to all farmers at a 2-year interval.",
+      "Evaluates 12 parameters: N, P, K, S, Zn, Fe, Cu, Mn, Bo, pH, EC, and Organic Carbon."
+    ],
+    "bullet_points": [
+      "100% free of cost to all farmers across India.",
+      "Customized fertilizer dosage recommendations based on soil test results.",
+      "Promotes balanced use of fertilizers and reduces unnecessary expenditure."
+    ]
+  },
+  {
+    "scheme_name": "Karnataka Krishi Bhagya & Raitha Shakti",
+    "portal_url": "https://raitamitra.karnataka.gov.in/",
+    "level": "STATE",
+    "ministry": "Department of Agriculture, Govt of Karnataka",
+    "timestamp": "2026-11-16 18:40:06",
+    "http_status_code": 200,
+    "page_title": "Raita Mitra Portal | Agriculture Department | Government of Karnataka",
+    "headings": [
+      "Krishi Bhagya Scheme - Rainfed Farming Modernization",
+      "Raitha Shakti Scheme - Farm Mechanization Diesel Subsidy",
+      "Karnataka Raitha Siri - Minor Millet Incentive"
+    ],
+    "key_paragraphs": [
+      "Krishi Bhagya provides up to 80% capital subsidy for farm pond construction and polythene lining in dry-zone taluks.",
+      "Raitha Shakti provides diesel subsidy of Rs. 250 per acre up to 5 acres directly into farmer bank accounts via DBT."
+    ],
+    "bullet_points": [
+      "Beneficiaries must possess registered land records in Karnataka FRUITS portal.",
+      "Priority funding for Scheduled Caste (SC) and Scheduled Tribe (ST) smallholders.",
+      "Millets promotion incentive of Rs. 10,000 per hectare for registered growers."
+    ]
+  }
+]

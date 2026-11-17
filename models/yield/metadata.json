@@ -1,0 +1,116 @@
+{
+  "task": "crop_yield_prediction",
+  "dataset": "Official Ministry of Agriculture & Farmers Welfare APY Dataset (DESAgri)",
+  "target": "Yield_tonnes_per_ha",
+  "unit": "tonnes per hectare",
+  "kind": "regression",
+  "features": [
+    "State_Name",
+    "Crop",
+    "Season",
+    "Area",
+    "Crop_Year"
+  ],
+  "selected_model": "RandomForestRegressor",
+  "test_metrics": {
+    "mae": 1.1610500477063892,
+    "rmse": 3.4535972516293656,
+    "r2": 0.8944703208624556,
+    "baseline_rmse_improvement_percent": 67.53265139277158
+  },
+  "all_models_compared": {
+    "CropMeanBaseline (Crop Historical Mean)": {
+      "mae": 1.7949507246854286,
+      "rmse": 5.101794930931881,
+      "r2": 0.7697088579617659,
+      "baseline_rmse_improvement_percent": 52.037906427274216
+    },
+    "DummyRegressor (Global Mean)": {
+      "mae": 4.917930269607038,
+      "rmse": 10.637139772049228,
+      "r2": -0.0011080864829859927,
+      "baseline_rmse_improvement_percent": 0.0
+    },
+    "RidgeRegression": {
+      "mae": 1.9467051804818807,
+      "rmse": 4.8006334399798645,
+      "r2": 0.7960947867341441,
+      "baseline_rmse_improvement_percent": 54.869132653551375
+    },
+    "RandomForestRegressor": {
+      "mae": 1.1610500477063892,
+      "rmse": 3.4535972516293656,
+      "r2": 0.8944703208624556,
+      "baseline_rmse_improvement_percent": 67.53265139277158
+    }
+  },
+  "per_crop_test_metrics": {
+    "Rice": {
+      "test_samples": 2485,
+      "actual_mean_yield_t_ha": 2.31,
+      "predicted_mean_yield_t_ha": 1.96,
+      "mae_t_ha": 0.681,
+      "rmse_t_ha": 0.862
+    },
+    "Wheat": {
+      "test_samples": 1139,
+      "actual_mean_yield_t_ha": 2.27,
+      "predicted_mean_yield_t_ha": 2.08,
+      "mae_t_ha": 0.57,
+      "rmse_t_ha": 0.741
+    },
+    "Maize": {
+      "test_samples": 2429,
+      "actual_mean_yield_t_ha": 2.64,
+      "predicted_mean_yield_t_ha": 2.23,
+      "mae_t_ha": 0.814,
+      "rmse_t_ha": 1.176
+    },
+    "Sugarcane": {
+      "test_samples": 965,
+      "actual_mean_yield_t_ha": 46.86,
+      "predicted_mean_yield_t_ha": 44.16,
+      "mae_t_ha": 10.318,
+      "rmse_t_ha": 14.498
+    },
+    "Cotton(lint)": {
+      "test_samples": 630,
+      "actual_mean_yield_t_ha": 1.9,
+      "predicted_mean_yield_t_ha": 1.49,
+      "mae_t_ha": 0.802,
+      "rmse_t_ha": 1.051
+    },
+    "Gram": {
+      "test_samples": 991,
+      "actual_mean_yield_t_ha": 0.92,
+      "predicted_mean_yield_t_ha": 0.99,
+      "mae_t_ha": 0.338,
+      "rmse_t_ha": 0.451
+    }
+  },
+  "artifact_path": "models/yield/model.joblib",
+  "evaluation_protocol": "Chronological split: Train (1997-2011), Test (2012-2015)",
+  "major_crops_covered": [
+    "Rice",
+    "Maize",
+    "Moong(Green Gram)",
+    "Urad",
+    "Groundnut",
+    "Sesamum",
+    "Wheat",
+    "Rapeseed &Mustard",
+    "Arhar/Tur",
+    "Gram",
+    "Onion",
+    "Jowar",
+    "Potato",
+    "Dry chillies",
+    "Sugarcane",
+    "Sunflower",
+    "Bajra",
+    "Small millets",
+    "Peas & beans (Pulses)",
+    "Cotton(lint)"
+  ],
+  "random_state": 42
+}

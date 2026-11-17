@@ -1,0 +1,135 @@
+[
+  {
+    "scheme_name": "PM-KISAN",
+    "description": "Central Sector income-support scheme for eligible landholding farmer families, subject to scheme exclusions and verification.",
+    "target_beneficiaries": "Eligible landholding farmer families",
+    "state_or_national_scope": "National",
+    "eligibility_rules": [
+      {
+        "field": "land_ownership",
+        "operator": "equals",
+        "value": "owned"
+      }
+    ],
+    "benefit_type": "income_support",
+    "benefit_description": "Potential income-support program; eligibility and exclusions must be verified through the official PM-KISAN system.",
+    "required_documents": [
+      "Land/landholding records",
+      "Bank account details",
+      "Identity/KYC information as required by the official process"
+    ],
+    "application_method": "Official PM-KISAN portal / designated registration channels",
+    "official_source": "PM-KISAN official portal",
+    "source_url": "https://pmkisan.gov.in/",
+    "last_verified": "2026-09-27",
+    "support_category": "subsidy",
+    "support_tags": [
+      "subsidy"
+    ]
+  },
+  {
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "description": "Government crop-insurance program for notified crops/areas and applicable farmers, subject to current operational rules.",
+    "target_beneficiaries": "Farmers with insurable interest in notified crops/areas",
+    "state_or_national_scope": "National framework with state/district/crop notifications",
+    "eligibility_rules": [
+      {
+        "field": "insurance_required",
+        "operator": "truthy"
+      }
+    ],
+    "benefit_type": "crop_insurance",
+    "benefit_description": "Potential crop-insurance support; coverage, notified crops, seasons and enrolment conditions require official verification.",
+    "required_documents": [
+      "Farmer identity/KYC information",
+      "Land/cultivation records as applicable",
+      "Bank details as required",
+      "Crop/season information"
+    ],
+    "application_method": "Official PMFBY portal or applicable state/authorized channels",
+    "official_source": "PMFBY official portal",
+    "source_url": "https://pmfby.gov.in/",
+    "last_verified": "2026-09-27",
+    "support_category": "insurance",
+    "support_tags": [
+      "insurance"
+    ]
+  },
+  {
+    "scheme_name": "PMKSY - Per Drop More Crop",
+    "description": "Irrigation/water-use-efficiency component supporting micro-irrigation and related interventions subject to applicable plans and rules.",
+    "target_beneficiaries": "Farmers under applicable state/district implementation arrangements",
+    "state_or_national_scope": "National framework with state-level implementation",
+    "eligibility_rules": [
+      {
+        "field": "irrigation_required",
+        "operator": "truthy"
+      }
+    ],
+    "benefit_type": "irrigation_support",
+    "benefit_description": "Potential support for micro-irrigation and water-use-efficiency interventions; local implementation conditions must be checked.",
+    "required_documents": [
+      "Farmer identity/KYC information",
+      "Land details",
+      "Bank details where required",
+      "Technical/application documents as applicable"
+    ],
+    "application_method": "Relevant state agriculture/implementing authority and official PMKSY channels",
+    "official_source": "PMKSY official portal",
+    "source_url": "https://pmksy.gov.in/",
+    "last_verified": "2026-09-27",
+    "support_category": "subsidy",
+    "support_tags": [
+      "irrigation",
+      "subsidy"
+    ]
+  },
+  {
+    "scheme_name": "Soil Health Card",
+    "description": "Government soil-testing/reporting service providing soil nutrient status and advisory information.",
+    "target_beneficiaries": "Farmers seeking soil nutrient/soil-health information",
+    "state_or_national_scope": "National",
+    "eligibility_rules": [],
+    "benefit_type": "soil_information",
+    "benefit_description": "Potentially relevant soil-testing and soil-health information service; availability and local process should be verified.",
+    "required_documents": [
+      "Farmer/holding information as required by the local soil-testing process"
+    ],
+    "application_method": "Official Soil Health Card portal / local agriculture and soil-testing channels",
+    "official_source": "Soil Health Card official portal",
+    "source_url": "https://soilhealth.dac.gov.in/",
+    "last_verified": "2026-09-27",
+    "support_category": "soil_service",
+    "support_tags": [
+      "soil"
+    ]
+  },
+  {
+    "scheme_name": "Agriculture Infrastructure Fund (AIF)",
+    "description": "Government financing facility for eligible agriculture infrastructure projects under applicable scheme guidelines.",
+    "target_beneficiaries": "Eligible beneficiaries/projects under current AIF guidelines",
+    "state_or_national_scope": "National",
+    "eligibility_rules": [
+      {
+        "field": "loan_required",
+        "operator": "truthy"
+      }
+    ],
+    "benefit_type": "infrastructure_finance",
+    "benefit_description": "Potential agriculture-infrastructure financing category; project eligibility, financing terms and lender assessment require official verification.",
+    "required_documents": [
+      "Project/business details",
+      "Land/asset documents where applicable",
+      "Identity/KYC information",
+      "Financial documents required by lender/project"
+    ],
+    "application_method": "Official AIF channel and participating financial institution as applicable",
+    "official_source": "Agriculture Infrastructure Fund official portal",
+    "source_url": "https://agriinfra.dac.gov.in/",
+    "last_verified": "2026-09-27",
+    "support_category": "infrastructure_finance",
+    "support_tags": [
+      "credit"
+    ]
+  }
+]

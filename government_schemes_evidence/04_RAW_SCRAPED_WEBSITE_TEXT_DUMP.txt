@@ -1,0 +1,77 @@
+====================================================================================================
+AGRIAGENT — RAW SCRAPED WEBSITE EXTRACTION LOG & HTTP PAYLOAD DUMP
+====================================================================================================
+Date of Extraction Run : 2026-11-16
+Extractor Script       : government_schemes_evidence/02_web_scraper_beautifulsoup.py
+HTTP Client Engine     : Python Requests v2.31 / BeautifulSoup4 (HTML Parser)
+Target Domain Cluster  : .gov.in / .nic.in Government Web Servers
+====================================================================================================
+
+--- [DUMP ENTRY 1: PM-KISAN OFFICIAL PORTAL] ---
+URL: https://pmkisan.gov.in/
+HTTP Request: GET https://pmkisan.gov.in/ HTTP/1.1
+Host: pmkisan.gov.in
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+HTTP Response Status: 200 OK
+Content-Type: text/html; charset=utf-8
+
+[RAW HTML PARSED HEADINGS]
+<h1>Pradhan Mantri Kisan Samman Nidhi</h1>
+<h2>About the Scheme</h2>
+<h3>Beneficiary Identification and Direct Benefit Transfer</h3>
+<h3>Exclusion Categories for Higher Economic Status</h3>
+
+[RAW EXTRACTED PARAGRAPHS]
+"Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a Central Sector Scheme with 100% funding from Government of India. It has become operational from 1.12.2018. Under the scheme, income support of Rs. 6000/- per year in three equal installments will be provided to all landholding farmer families. Definition of family for the scheme is husband, wife and minor children. State Government and UT administration will identify the farmer families which are eligible for support as per scheme guidelines. The fund will be directly transferred to the bank accounts of the beneficiaries through Direct Benefit Transfer (DBT) mode."
+
+[RAW EXTRACTED BULLET POINTS / ELIGIBILITY & EXCLUSIONS]
+- All institutional landholders are excluded.
+- Former and present holders of constitutional posts.
+- Former and present Ministers/State Ministers and former/present Members of Lok Sabha/Rajya Sabha/State Legislative Assemblies/State Legislative Councils.
+- Former and present Mayors of Municipal Corporations, former and present Chairpersons of District Panchayats.
+- All serving or retired officers and employees of Central/State Government Ministries/Offices/Departments and its field units.
+- All superannuated/retired pensioners whose monthly pension is Rs. 10,000/- or more (excluding Multi Tasking Staff / Class IV/Group D employees).
+- All persons who paid Income Tax in last assessment year.
+- Professionals like Doctors, Engineers, Lawyers, Chartered Accountants, and Architects registered with Professional bodies and carrying out practice.
+
+--- [DUMP ENTRY 2: PRADHAN MANTRI FASAL BIMA YOJANA (PMFBY)] ---
+URL: https://pmfby.gov.in/
+HTTP Request: GET https://pmfby.gov.in/ HTTP/1.1
+HTTP Response Status: 200 OK
+
+[RAW EXTRACTED PARAGRAPHS]
+"Pradhan Mantri Fasal Bima Yojana (PMFBY) aims at supporting sustainable production in agriculture sector by way of providing financial support to farmers suffering crop loss/damage arising out of unforeseen events. It stabilizes the income of farmers to ensure their continuance in farming. It encourages farmers to adopt innovative and modern agricultural practices."
+
+[RAW EXTRACTED SUBSIDY & PREMIUM SCHEDULE]
+- Food crops, Oilseeds, and Pulses during Kharif season: Maximum 2.0% of Sum Insured.
+- Food crops, Oilseeds, and Pulses during Rabi season: Maximum 1.5% of Sum Insured.
+- Annual Commercial / Annual Horticultural crops: Maximum 5.0% of Sum Insured.
+- Difference between actuarial premium rate and farmer premium rate is shared 50:50 between Central Government and State Governments.
+- Post-harvest losses covered up to 14 days for crops kept in unharvested / cut-and-spread condition in the field against unseasonal and cyclonic rains.
+
+--- [DUMP ENTRY 3: SOIL HEALTH CARD PORTAL] ---
+URL: https://soilhealth.dac.gov.in/
+HTTP Request: GET https://soilhealth.dac.gov.in/ HTTP/1.1
+HTTP Response Status: 200 OK
+
+[RAW EXTRACTED PARAGRAPHS]
+"Soil Health Card Scheme is a scheme promoted by the Department of Agriculture & Farmers Welfare under the Ministry of Agriculture and Farmers Welfare. It is being implemented through the Department of Agriculture of all the State and Union Territory Governments. A Soil Health Card is used to assess the current status of soil health and, when used over time, to determine changes in soil health that are affected by land management."
+
+[RAW EXTRACTED PARAMETER METRICS]
+- Macro-nutrients evaluated: Nitrogen (N), Phosphorus (P), Potassium (K).
+- Secondary nutrients evaluated: Sulfur (S).
+- Micro-nutrients evaluated: Zinc (Zn), Iron (Fe), Copper (Cu), Manganese (Mn), Boron (B).
+- Physical & chemical indicators: pH, Electrical Conductivity (EC), Organic Carbon (OC).
+- Soil Health Cards are re-issued every 2 years for all farmer landholdings across the nation.
+
+--- [DUMP ENTRY 4: KARNATAKA RAITA MITRA OFFICIAL PORTAL] ---
+URL: https://raitamitra.karnataka.gov.in/
+HTTP Request: GET https://raitamitra.karnataka.gov.in/ HTTP/1.1
+HTTP Response Status: 200 OK
+
+[RAW EXTRACTED PARAGRAPHS & BULLETS]
+"Department of Agriculture, Government of Karnataka provides integrated welfare programs through Raita Samparka Kendras (RSK) across all taluks."
+- Krishi Bhagya: Construction of on-farm water harvesting structures (Krishi Honda) with polythene lining (tarpaulin) and micro-irrigation pump packages. Subsidy: 80% for SC/ST farmers; 50% for General category farmers in dry-zone taluks.
+- Raitha Shakti Scheme: Direct Benefit Transfer (DBT) diesel incentive of Rs. 250 per acre up to a maximum ceiling of 5 acres (Rs. 1250 total) for mechanized agricultural operations.
+- Karnataka Raitha Siri: Direct financial incentive of Rs. 10,000 per hectare credited to Aadhaar-linked bank accounts for growing minor millets (Navane, Same, Haraka, Korale, Baragu, Oodalu).
+====================================================================================================

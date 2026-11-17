@@ -1,0 +1,44 @@
+{
+  "model": "RandomForestClassifier",
+  "task": "fertilizer_regime_recommendation",
+  "dataset": "data/processed/clean_fertilizer_recommendation.csv",
+  "features": [
+    "Soil_pH",
+    "Soil_EC",
+    "Soil_OC_percent",
+    "Soil_P_kg_ha",
+    "Soil_K_kg_ha",
+    "Recommended_N_kg_ha",
+    "Recommended_P2O5_kg_ha",
+    "Recommended_K2O_kg_ha"
+  ],
+  "classes": [
+    "DAP_MOP_SSP_Legume",
+    "Gypsum_Saline_Tolerant_NPK",
+    "NPK_10_26_26_Potash_Rich",
+    "NPK_20_20_0_13_Sulfur_Enriched",
+    "Urea_DAP_MOP_Balanced"
+  ],
+  "test_metrics": {
+    "accuracy": 0.9849799732977303,
+    "f1_weighted": 0.9848243090919369
+  },
+  "all_models_compared": {
+    "DummyClassifier": {
+      "accuracy": 0.3531375166889186,
+      "f1_weighted": 0.1843214073294898
+    },
+    "LogisticRegression": {
+      "accuracy": 0.9606141522029372,
+      "f1_weighted": 0.9603794780871097
+    },
+    "DecisionTreeClassifier": {
+      "accuracy": 0.9846461949265688,
+      "f1_weighted": 0.9844909676844877
+    },
+    "RandomForestClassifier": {
+      "accuracy": 0.9849799732977303,
+      "f1_weighted": 0.9848243090919369
+    }
+  }
+}

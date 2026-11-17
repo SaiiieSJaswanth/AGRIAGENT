@@ -1,0 +1,19 @@
+{
+  "project": "AGRIAGENT",
+  "status": "updated_after_synthetic_data_removal",
+  "crop_recommendation": {
+    "method": "historical APY regional crop-area ranking",
+    "classifier_used": false,
+    "confidence_percent_reported": false,
+    "source_year_range": [
+      1997,
+      2015
+    ],
+    "limitations": "Historical regional cultivation evidence, not farm-specific suitability; see MODEL_LIMITATIONS.md."
+  },
+  "retained_models": [
+    "yield",
+    "soil_health"
+  ],
+  "note": "Previous simulated benchmark classifier metrics are retired and must not be cited."
+}
