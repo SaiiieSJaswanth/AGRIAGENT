@@ -3,26 +3,26 @@
     "state": "Andhra Pradesh",
     "district": "Anantapur",
     "soil_type": "Red Soil",
-    "land_area_acres": 2.5,
+    "land_area_acres": 7.5,
     "land_ownership": "owned",
-    "farmer_category": null,
+    "farmer_category": "small",
     "income_category": null,
     "farming_experience_years": null,
-    "current_crop": null,
-    "season": "Rabi",
-    "irrigation_available": true,
+    "current_crop": "Rice",
+    "season": "Kharif",
+    "irrigation_available": false,
     "existing_agricultural_loan": false,
     "loan_required": false,
     "loan_purpose": null,
     "equipment_required": false,
-    "irrigation_required": false,
-    "insurance_required": false,
-    "subsidy_required": false,
-    "nitrogen_kg_ha": null,
-    "phosphorus_kg_ha": null,
-    "potassium_kg_ha": null,
-    "soil_ph": null,
-    "organic_carbon_percent": null,
+    "irrigation_required": true,
+    "insurance_required": true,
+    "subsidy_required": true,
+    "nitrogen_kg_ha": 220.0,
+    "phosphorus_kg_ha": 19.0,
+    "potassium_kg_ha": 240.0,
+    "soil_ph": 7.2,
+    "organic_carbon_percent": 0.58,
     "electrical_conductivity_ds_m": null,
     "sulfur_ppm": null,
     "zinc_ppm": null,
@@ -121,12 +121,22 @@
   "crop_recommendation": {
     "status": "success",
     "recommendation_type": "historical_regional_crop_shortlist",
-    "top_crop": "Gram",
+    "top_crop": "Groundnut",
     "ranked_recommendations": [
       {
-        "crop": "Gram",
-        "cultivated_area_ha": 81251.8,
-        "recorded_production": 59240.0,
+        "crop": "Groundnut",
+        "cultivated_area_ha": 703736.8,
+        "recorded_production": 270489.2,
+        "observations": 5,
+        "latest_year": 2014,
+        "also_listed_in_state_catalog": true,
+        "evidence_scope": "district_and_season",
+        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
+      },
+      {
+        "crop": "Arhar/Tur",
+        "cultivated_area_ha": 52364.2,
+        "recorded_production": 7523.2,
         "observations": 5,
         "latest_year": 2014,
         "also_listed_in_state_catalog": false,
@@ -134,19 +144,19 @@
         "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
       },
       {
-        "crop": "Groundnut",
-        "cultivated_area_ha": 18623.2,
-        "recorded_production": 30439.4,
+        "crop": "Cotton(lint)",
+        "cultivated_area_ha": 32519.6,
+        "recorded_production": 46330.4,
         "observations": 5,
         "latest_year": 2014,
-        "also_listed_in_state_catalog": true,
+        "also_listed_in_state_catalog": false,
         "evidence_scope": "district_and_season",
         "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
       },
       {
         "crop": "Rice",
-        "cultivated_area_ha": 12322.0,
-        "recorded_production": 31127.8,
+        "cultivated_area_ha": 29104.2,
+        "recorded_production": 76552.2,
         "observations": 5,
         "latest_year": 2014,
         "also_listed_in_state_catalog": true,
@@ -154,19 +164,9 @@
         "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
       },
       {
-        "crop": "Jowar",
-        "cultivated_area_ha": 7768.8,
-        "recorded_production": 3964.8,
-        "observations": 5,
-        "latest_year": 2014,
-        "also_listed_in_state_catalog": false,
-        "evidence_scope": "district_and_season",
-        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
-      },
-      {
         "crop": "Maize",
-        "cultivated_area_ha": 6055.8,
-        "recorded_production": 46232.0,
+        "cultivated_area_ha": 20427.6,
+        "recorded_production": 54813.6,
         "observations": 5,
         "latest_year": 2014,
         "also_listed_in_state_catalog": true,
@@ -177,7 +177,7 @@
     "state": "Andhra Pradesh",
     "district": "Anantapur",
     "matched_source_district": "Anantapur",
-    "season": "Rabi",
+    "season": "Kharif",
     "evidence_scope": "district_and_season",
     "evidence_year_range": [
       2010,
@@ -202,7 +202,7 @@
     "method": "Rule-based agronomic evaluation (ICAR-IISS / Soil Health Card Standards)",
     "parameter_evaluations": {
       "pH": {
-        "value": 6.8,
+        "value": 7.2,
         "unit": "pH scale",
         "status": "Neutral (Optimal)",
         "management": "Optimal soil reaction for maximum nutrient availability for most field crops."
@@ -214,21 +214,21 @@
         "management": "Salinity within safe range; no restriction on crop selection."
       },
       "OC": {
-        "value": 0.6,
+        "value": 0.58,
         "unit": "%",
         "rating": "Medium",
         "score": 2,
         "adjustment": "Apply 100% of standard Recommended Dose of Fertilizer (RDF)."
       },
       "P": {
-        "value": 16.0,
+        "value": 19.0,
         "unit": "kg/ha",
         "rating": "Medium",
         "score": 2,
         "adjustment": "Apply 100% of standard Recommended Dose of Fertilizer (RDF)."
       },
       "K": {
-        "value": 180.0,
+        "value": 240.0,
         "unit": "kg/ha",
         "rating": "Medium",
         "score": 2,
@@ -241,49 +241,49 @@
     "fertility_index": 2.0,
     "internal_ml_soil_assessment": {
       "status": "success",
-      "predicted_fertility_class": "Medium",
+      "predicted_fertility_class": "Low",
       "class_probabilities": {
         "High": 0.1372,
-        "Low": 0.4303,
-        "Medium": 0.4325
+        "Low": 0.4465,
+        "Medium": 0.4163
       },
       "display_policy": "Hidden internal ML validation signal; farmer receives ICAR-IISS standard evaluation."
     }
   },
   "fertilizer_guidance": {
-    "crop": "Gram",
+    "crop": "Rice",
     "method": "ICAR Recommended Dose of Fertilizer (RDF) adjusted by Soil Test Crop Response (STCR) + ML Classifier",
-    "ml_regime_classification": "NPK_20_20_0_13_Sulfur_Enriched",
+    "ml_regime_classification": "Urea_DAP_MOP_Balanced",
     "ml_status": "success",
-    "land_area_acres": 2.5,
-    "land_area_ha": 1.01,
+    "land_area_acres": 7.5,
+    "land_area_ha": 3.04,
     "base_rdf_kg_ha": {
-      "N": 80.0,
-      "P2O5": 40.0,
-      "K2O": 40.0
+      "N": 100.0,
+      "P2O5": 50.0,
+      "K2O": 50.0
     },
     "adjusted_recommendation_kg_ha": {
-      "fertilizer_n_requirement_kg_ha": 80.0,
-      "fertilizer_p2o5_requirement_kg_ha": 40.0,
-      "fertilizer_k2o_requirement_kg_ha": 40.0
+      "fertilizer_n_requirement_kg_ha": 100.0,
+      "fertilizer_p2o5_requirement_kg_ha": 50.0,
+      "fertilizer_k2o_requirement_kg_ha": 50.0
     },
     "commercial_fertilizer_per_ha": {
-      "Urea (46% N) [kg/ha]": 139.9,
-      "DAP (18-46-0) [kg/ha]": 87.0,
-      "MOP (60% K2O) [kg/ha]": 66.7
+      "Urea (46% N) [kg/ha]": 174.9,
+      "DAP (18-46-0) [kg/ha]": 108.7,
+      "MOP (60% K2O) [kg/ha]": 83.3
     },
     "commercial_fertilizer_quantities": {
-      "urea_kg": 141.3,
-      "dap_kg": 87.9,
-      "mop_kg": 67.4
+      "urea_kg": 531.7,
+      "dap_kg": 330.4,
+      "mop_kg": 253.2
     },
     "total_farm_requirement": {
-      "Urea [kg]": 141.3,
-      "DAP [kg]": 87.9,
-      "MOP [kg]": 67.4
+      "Urea [kg]": 531.7,
+      "DAP [kg]": 330.4,
+      "MOP [kg]": 253.2
     },
-    "nitrogen_double_counting_safeguard": "DAP contributed 15.7 kg/ha N, deducted before calculating Urea requirement.",
-    "application_schedule": "1/2 N + full P & K basal; 1/2 N topdressed at active vegetative stage",
+    "nitrogen_double_counting_safeguard": "DAP contributed 19.6 kg/ha N, deducted before calculating Urea requirement.",
+    "application_schedule": "N in 3 splits (50% basal, 25% active tillering, 25% panicle initiation); P & K 100% basal",
     "safety_warnings": [
       "Never mix Urea with lime or alkaline substances directly.",
       "Apply DAP and MOP at the root zone (basal), not as broadcast on wet foliage.",
@@ -292,27 +292,29 @@
     "sources": "ICAR-IISS Soil Test Crop Response (STCR) & State Agricultural University Package of Practices."
   },
   "irrigation_guidance": {
-    "crop": "Gram",
-    "season": "Rabi",
+    "crop": "Rice",
+    "season": "Kharif",
     "soil_type": "Red Soil",
     "soil_water_holding_capacity_mm_m": 120.0,
     "method": "Hybrid Decision Tree ML Classifier + FAO-56 Agronomic Water Balance",
-    "irrigation_requirement_class": "Low irrigation requirement",
-    "ml_irrigation_class": "Low irrigation requirement",
+    "irrigation_requirement_class": "High irrigation requirement",
+    "ml_irrigation_class": "High irrigation requirement",
     "ml_status": "success",
-    "crop_water_requirement_mm": 550.0,
-    "expected_seasonal_rainfall_mm": 161.9,
+    "crop_water_requirement_mm": 1250.0,
+    "expected_seasonal_rainfall_mm": 322.8,
     "rainfall_data_nature": "Climatological historical normal (IMD 1951-2000), not a live weather forecast",
-    "estimated_net_deficit_mm": 56.5,
-    "critical_growth_stages": "Flowering and seed/grain filling stages",
-    "advisory": "Light supplemental irrigation recommended (57 mm deficit) during dry spells.",
+    "estimated_net_deficit_mm": 175.1,
+    "critical_growth_stages": "Tillering, Panicle Initiation, Flowering, Milk Stage",
+    "advisory": "High irrigation requirement (175 mm deficit). Assured micro-irrigation (drip/sprinkler) strongly recommended.",
     "water_conservation_tips": [
       "Use organic mulching (crop residue / straw) to reduce surface soil evaporation by up to 30%.",
       "Adopt drip or micro-sprinkler irrigation to achieve 40-50% water savings compared to flood irrigation.",
       "Schedule irrigation during early morning or evening hours to minimize evaporative loss.",
       "Construct farm ponds or check dams for in-situ rainwater harvesting under PMKSY."
     ],
-    "alerts": [],
+    "alerts": [
+      "CRITICAL RISK: Farmer has no irrigation access for a crop experiencing a severe rainfall deficit. High vulnerability to moisture stress."
+    ],
     "sources": "FAO-56 Crop Evapotranspiration Guidelines & IMD District Climatological Normals."
   },
   "support_matches": [
@@ -331,6 +333,48 @@
       "application_method": "Official PM-KISAN portal / designated registration channels",
       "official_source": "PM-KISAN official portal",
       "source_url": "https://pmkisan.gov.in/",
+      "last_verified": "2026-09-27",
+      "evidence": [
+        true
+      ]
+    },
+    {
+      "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "scheme_level": "CENTRAL",
+      "state": null,
+      "status": "potentially_eligible",
+      "benefit_type": "crop_insurance",
+      "benefit_description": "Potential crop-insurance support; coverage, notified crops, seasons and enrolment conditions require official verification.",
+      "required_documents": [
+        "Farmer identity/KYC information",
+        "Land/cultivation records as applicable",
+        "Bank details as required",
+        "Crop/season information"
+      ],
+      "application_method": "Official PMFBY portal or applicable state/authorized channels",
+      "official_source": "PMFBY official portal",
+      "source_url": "https://pmfby.gov.in/",
+      "last_verified": "2026-09-27",
+      "evidence": [
+        true
+      ]
+    },
+    {
+      "scheme_name": "PMKSY - Per Drop More Crop",
+      "scheme_level": "CENTRAL",
+      "state": null,
+      "status": "potentially_eligible",
+      "benefit_type": "irrigation_support",
+      "benefit_description": "Potential support for micro-irrigation and water-use-efficiency interventions; local implementation conditions must be checked.",
+      "required_documents": [
+        "Farmer identity/KYC information",
+        "Land details",
+        "Bank details where required",
+        "Technical/application documents as applicable"
+      ],
+      "application_method": "Relevant state agriculture/implementing authority and official PMKSY channels",
+      "official_source": "PMKSY official portal",
+      "source_url": "https://pmksy.gov.in/",
       "last_verified": "2026-09-27",
       "evidence": [
         true
@@ -462,6 +506,13 @@
     "Land/landholding records",
     "Bank account details",
     "Identity/KYC information as required by the official process",
+    "Farmer identity/KYC information",
+    "Land/cultivation records as applicable",
+    "Bank details as required",
+    "Crop/season information",
+    "Land details",
+    "Bank details where required",
+    "Technical/application documents as applicable",
     "Farmer/holding information as required by the local soil-testing process",
     "Identity/KYC documents",
     "Land/holding records where applicable",

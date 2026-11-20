@@ -2,22 +2,22 @@
   "farmer_profile": {
     "state": "Andhra Pradesh",
     "district": "Anantapur",
-    "soil_type": "Red Soil",
+    "soil_type": "Alluvial Soil",
     "land_area_acres": 2.5,
     "land_ownership": "owned",
     "farmer_category": null,
     "income_category": null,
     "farming_experience_years": null,
     "current_crop": null,
-    "season": "Rabi",
+    "season": "Kharif",
     "irrigation_available": true,
     "existing_agricultural_loan": false,
-    "loan_required": false,
+    "loan_required": true,
     "loan_purpose": null,
-    "equipment_required": false,
+    "equipment_required": true,
     "irrigation_required": false,
-    "insurance_required": false,
-    "subsidy_required": false,
+    "insurance_required": true,
+    "subsidy_required": true,
     "nitrogen_kg_ha": null,
     "phosphorus_kg_ha": null,
     "potassium_kg_ha": null,
@@ -121,12 +121,22 @@
   "crop_recommendation": {
     "status": "success",
     "recommendation_type": "historical_regional_crop_shortlist",
-    "top_crop": "Gram",
+    "top_crop": "Groundnut",
     "ranked_recommendations": [
       {
-        "crop": "Gram",
-        "cultivated_area_ha": 81251.8,
-        "recorded_production": 59240.0,
+        "crop": "Groundnut",
+        "cultivated_area_ha": 703736.8,
+        "recorded_production": 270489.2,
+        "observations": 5,
+        "latest_year": 2014,
+        "also_listed_in_state_catalog": true,
+        "evidence_scope": "district_and_season",
+        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
+      },
+      {
+        "crop": "Arhar/Tur",
+        "cultivated_area_ha": 52364.2,
+        "recorded_production": 7523.2,
         "observations": 5,
         "latest_year": 2014,
         "also_listed_in_state_catalog": false,
@@ -134,19 +144,19 @@
         "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
       },
       {
-        "crop": "Groundnut",
-        "cultivated_area_ha": 18623.2,
-        "recorded_production": 30439.4,
+        "crop": "Cotton(lint)",
+        "cultivated_area_ha": 32519.6,
+        "recorded_production": 46330.4,
         "observations": 5,
         "latest_year": 2014,
-        "also_listed_in_state_catalog": true,
+        "also_listed_in_state_catalog": false,
         "evidence_scope": "district_and_season",
         "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
       },
       {
         "crop": "Rice",
-        "cultivated_area_ha": 12322.0,
-        "recorded_production": 31127.8,
+        "cultivated_area_ha": 29104.2,
+        "recorded_production": 76552.2,
         "observations": 5,
         "latest_year": 2014,
         "also_listed_in_state_catalog": true,
@@ -154,19 +164,9 @@
         "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
       },
       {
-        "crop": "Jowar",
-        "cultivated_area_ha": 7768.8,
-        "recorded_production": 3964.8,
-        "observations": 5,
-        "latest_year": 2014,
-        "also_listed_in_state_catalog": false,
-        "evidence_scope": "district_and_season",
-        "evidence_note": "Ranked by recorded cultivated area in historical government crop statistics; not a guaranteed suitability score."
-      },
-      {
         "crop": "Maize",
-        "cultivated_area_ha": 6055.8,
-        "recorded_production": 46232.0,
+        "cultivated_area_ha": 20427.6,
+        "recorded_production": 54813.6,
         "observations": 5,
         "latest_year": 2014,
         "also_listed_in_state_catalog": true,
@@ -177,7 +177,7 @@
     "state": "Andhra Pradesh",
     "district": "Anantapur",
     "matched_source_district": "Anantapur",
-    "season": "Rabi",
+    "season": "Kharif",
     "evidence_scope": "district_and_season",
     "evidence_year_range": [
       2010,
@@ -251,39 +251,39 @@
     }
   },
   "fertilizer_guidance": {
-    "crop": "Gram",
+    "crop": "Groundnut",
     "method": "ICAR Recommended Dose of Fertilizer (RDF) adjusted by Soil Test Crop Response (STCR) + ML Classifier",
     "ml_regime_classification": "NPK_20_20_0_13_Sulfur_Enriched",
     "ml_status": "success",
     "land_area_acres": 2.5,
     "land_area_ha": 1.01,
     "base_rdf_kg_ha": {
-      "N": 80.0,
-      "P2O5": 40.0,
-      "K2O": 40.0
+      "N": 25.0,
+      "P2O5": 50.0,
+      "K2O": 75.0
     },
     "adjusted_recommendation_kg_ha": {
-      "fertilizer_n_requirement_kg_ha": 80.0,
-      "fertilizer_p2o5_requirement_kg_ha": 40.0,
-      "fertilizer_k2o_requirement_kg_ha": 40.0
+      "fertilizer_n_requirement_kg_ha": 25.0,
+      "fertilizer_p2o5_requirement_kg_ha": 50.0,
+      "fertilizer_k2o_requirement_kg_ha": 75.0
     },
     "commercial_fertilizer_per_ha": {
-      "Urea (46% N) [kg/ha]": 139.9,
-      "DAP (18-46-0) [kg/ha]": 87.0,
-      "MOP (60% K2O) [kg/ha]": 66.7
+      "Urea (46% N) [kg/ha]": 11.8,
+      "DAP (18-46-0) [kg/ha]": 108.7,
+      "MOP (60% K2O) [kg/ha]": 125.0
     },
     "commercial_fertilizer_quantities": {
-      "urea_kg": 141.3,
-      "dap_kg": 87.9,
-      "mop_kg": 67.4
+      "urea_kg": 11.9,
+      "dap_kg": 109.8,
+      "mop_kg": 126.2
     },
     "total_farm_requirement": {
-      "Urea [kg]": 141.3,
-      "DAP [kg]": 87.9,
-      "MOP [kg]": 67.4
+      "Urea [kg]": 11.9,
+      "DAP [kg]": 109.8,
+      "MOP [kg]": 126.2
     },
-    "nitrogen_double_counting_safeguard": "DAP contributed 15.7 kg/ha N, deducted before calculating Urea requirement.",
-    "application_schedule": "1/2 N + full P & K basal; 1/2 N topdressed at active vegetative stage",
+    "nitrogen_double_counting_safeguard": "DAP contributed 19.6 kg/ha N, deducted before calculating Urea requirement.",
+    "application_schedule": "Full N, P, K at sowing; apply Gypsum @ 400 kg/ha at pegging (35-40 DAS)",
     "safety_warnings": [
       "Never mix Urea with lime or alkaline substances directly.",
       "Apply DAP and MOP at the root zone (basal), not as broadcast on wet foliage.",
@@ -292,20 +292,20 @@
     "sources": "ICAR-IISS Soil Test Crop Response (STCR) & State Agricultural University Package of Practices."
   },
   "irrigation_guidance": {
-    "crop": "Gram",
-    "season": "Rabi",
-    "soil_type": "Red Soil",
-    "soil_water_holding_capacity_mm_m": 120.0,
+    "crop": "Groundnut",
+    "season": "Kharif",
+    "soil_type": "Alluvial Soil",
+    "soil_water_holding_capacity_mm_m": 160.0,
     "method": "Hybrid Decision Tree ML Classifier + FAO-56 Agronomic Water Balance",
     "irrigation_requirement_class": "Low irrigation requirement",
     "ml_irrigation_class": "Low irrigation requirement",
     "ml_status": "success",
     "crop_water_requirement_mm": 550.0,
-    "expected_seasonal_rainfall_mm": 161.9,
+    "expected_seasonal_rainfall_mm": 322.8,
     "rainfall_data_nature": "Climatological historical normal (IMD 1951-2000), not a live weather forecast",
-    "estimated_net_deficit_mm": 56.5,
-    "critical_growth_stages": "Flowering and seed/grain filling stages",
-    "advisory": "Light supplemental irrigation recommended (57 mm deficit) during dry spells.",
+    "estimated_net_deficit_mm": 16.3,
+    "critical_growth_stages": "Flowering, Pegging, Pod Development",
+    "advisory": "Light supplemental irrigation recommended (16 mm deficit) during dry spells.",
     "water_conservation_tips": [
       "Use organic mulching (crop residue / straw) to reduce surface soil evaporation by up to 30%.",
       "Adopt drip or micro-sprinkler irrigation to achieve 40-50% water savings compared to flood irrigation.",
@@ -337,6 +337,27 @@
       ]
     },
     {
+      "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "scheme_level": "CENTRAL",
+      "state": null,
+      "status": "potentially_eligible",
+      "benefit_type": "crop_insurance",
+      "benefit_description": "Potential crop-insurance support; coverage, notified crops, seasons and enrolment conditions require official verification.",
+      "required_documents": [
+        "Farmer identity/KYC information",
+        "Land/cultivation records as applicable",
+        "Bank details as required",
+        "Crop/season information"
+      ],
+      "application_method": "Official PMFBY portal or applicable state/authorized channels",
+      "official_source": "PMFBY official portal",
+      "source_url": "https://pmfby.gov.in/",
+      "last_verified": "2026-09-27",
+      "evidence": [
+        true
+      ]
+    },
+    {
       "scheme_name": "Soil Health Card",
       "scheme_level": "CENTRAL",
       "state": null,
@@ -351,6 +372,27 @@
       "source_url": "https://soilhealth.dac.gov.in/",
       "last_verified": "2026-09-27",
       "evidence": []
+    },
+    {
+      "scheme_name": "Agriculture Infrastructure Fund (AIF)",
+      "scheme_level": "CENTRAL",
+      "state": null,
+      "status": "potentially_eligible",
+      "benefit_type": "infrastructure_finance",
+      "benefit_description": "Potential agriculture-infrastructure financing category; project eligibility, financing terms and lender assessment require official verification.",
+      "required_documents": [
+        "Project/business details",
+        "Land/asset documents where applicable",
+        "Identity/KYC information",
+        "Financial documents required by lender/project"
+      ],
+      "application_method": "Official AIF channel and participating financial institution as applicable",
+      "official_source": "Agriculture Infrastructure Fund official portal",
+      "source_url": "https://agriinfra.dac.gov.in/",
+      "last_verified": "2026-09-27",
+      "evidence": [
+        true
+      ]
     },
     {
       "scheme_name": "Rythu Bharosa",
@@ -462,7 +504,15 @@
     "Land/landholding records",
     "Bank account details",
     "Identity/KYC information as required by the official process",
+    "Farmer identity/KYC information",
+    "Land/cultivation records as applicable",
+    "Bank details as required",
+    "Crop/season information",
     "Farmer/holding information as required by the local soil-testing process",
+    "Project/business details",
+    "Land/asset documents where applicable",
+    "Identity/KYC information",
+    "Financial documents required by lender/project",
     "Identity/KYC documents",
     "Land/holding records where applicable",
     "Bank account details where applicable",

@@ -18,3 +18,26 @@
 2026-11-16T12:47:53.789629+00:00 | state=Andhra Pradesh | district=Anantapur | season=Rabi | model_prediction=Wheat | model_probability=0.2598489280690562
 2026-11-16T12:49:45.204786+00:00 | state=Karnataka | district=Belagavi | season=Kharif | model_prediction=Rice | model_probability=0.40798540043107856
 2026-11-16T12:52:14.600698+00:00 | state=Andhra Pradesh | district=Anantapur | season=Rabi | model_prediction=Wheat | model_probability=0.2598489280690563
+2026-11-18T15:20:37.485277+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310786
+2026-11-18T15:20:38.693769+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310786
+2026-11-18T15:20:39.586439+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310786
+2026-11-18T15:21:01.078241+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310785
+2026-11-18T15:21:02.288021+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310785
+2026-11-18T15:21:03.153288+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.40798540043107856
+2026-11-18T15:21:51.892394+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.40798540043107856
+2026-11-18T15:21:53.270314+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.40798540043107856
+2026-11-18T15:21:54.196563+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310786
+2026-11-18T16:09:43.050020+00:00 | state=Andhra Pradesh | district=Anantapur | season=Kharif | model_prediction=Rice | model_probability=0.4277827284668186
+2026-11-20T13:04:20.447781+00:00 | state=Andhra Pradesh | district=Guntur | season=Kharif | model_prediction=Rice | model_probability=0.42778272846681836
+2026-11-20T13:04:46.028230+00:00 | state=Andhra Pradesh | district=Guntur | season=Kharif | model_prediction=Rice | model_probability=0.4277827284668184
+2026-11-20T13:05:05.483707+00:00 | state=Andhra Pradesh | district=Guntur | season=Kharif | model_prediction=Rice | model_probability=0.4277827284668183
+2026-11-20T13:05:29.681681+00:00 | state=Andhra Pradesh | district=Guntur | season=Kharif | model_prediction=Rice | model_probability=0.4277827284668184
+2026-11-20T13:06:26.968549+00:00 | state=Andhra Pradesh | district=Guntur | season=Kharif | model_prediction=Rice | model_probability=0.4277827284668184
+2026-11-20T13:12:08.718732+00:00 | state=Andhra Pradesh | district=Guntur | season=Kharif | model_prediction=Rice | model_probability=0.42778272846681836
+2026-11-20T13:19:37.919627+00:00 | state=Andhra Pradesh | district=Anantapur | season=Kharif | model_prediction=Rice | model_probability=0.42778272846681853
+2026-11-20T13:22:08.624648+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310785
+2026-11-20T13:22:09.737679+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310785
+2026-11-20T13:22:10.501252+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.40798540043107856
+2026-11-20T13:22:56.310540+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.40798540043107856
+2026-11-20T13:22:57.439715+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310786
+2026-11-20T13:22:58.268640+00:00 | state=Karnataka | district=Bagalkote | season=Kharif | model_prediction=Rice | model_probability=0.4079854004310784

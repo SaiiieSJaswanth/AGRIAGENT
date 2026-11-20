@@ -30,7 +30,7 @@ body {
     color: #111111;
     background-color: #ffffff;
     margin: 40px auto;
-    max-width: 850px;
+    max-width: 800px;
 }
 h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -47,7 +47,16 @@ h2 {
     font-weight: bold;
     text-align: center;
     margin-top: 0pt;
+    margin-bottom: 8pt;
+}
+.repo-link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0pt;
     margin-bottom: 20pt;
+    color: #003399;
 }
 h3 {
     font-family: 'Times New Roman', Times, serif;
@@ -89,34 +98,28 @@ li {
 }
 table {
     border-collapse: collapse;
-    width: 100%;
-    margin-top: 6pt;
-    margin-bottom: 10pt;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 8pt;
+    margin-bottom: 12pt;
     font-family: 'Times New Roman', Times, serif;
     page-break-inside: avoid;
+    table-layout: fixed;
+    word-wrap: break-word;
 }
 th, td {
     border: 1px solid #333333;
-    padding: 4.5pt 6.5pt;
+    padding: 5pt 6pt;
     text-align: left;
     vertical-align: top;
-    font-size: 10.5pt;
+    font-size: 10pt;
     line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 th {
     background-color: #f2f2f2;
     font-weight: bold;
-}
-pre {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 10pt;
-    line-height: 1.2;
-    background-color: #fcfcfc;
-    border: 1px solid #cccccc;
-    padding: 8pt;
-    margin-top: 6pt;
-    margin-bottom: 10pt;
-    white-space: pre-wrap;
 }
 hr {
     border: none;
@@ -132,6 +135,7 @@ hr {
 a {
     color: #003399;
     text-decoration: underline;
+    word-break: break-all;
 }
 </style>
 </head>
@@ -140,9 +144,10 @@ a {
 
 <h1>AIML CASESTUDY REPORT</h1>
 <h2>TITLE: AGRIAGENT: A REAL-DATA DRIVEN AGRICULTURAL INTELLIGENCE AND FARMER DECISION SUPPORT SYSTEM FOR INDIA</h2>
+<p class="repo-link"><b>GITHUB REPOSITORY:</b> <a href="https://github.com/SaiiieSJaswanth/AGRIAGENT" target="_blank">https://github.com/SaiiieSJaswanth/AGRIAGENT</a></p>
 <hr>
 <h3>1. INTRODUCTION</h3>
-<p>Agriculture is the primary livelihood for more than 50 percent of India's population and contributes roughly 18 percent to India's Gross Domestic Product (GDP). The agricultural sector is predominantly composed of small and marginal farmers who cultivate less than two hectares of land. Every cropping season, smallholders make four crucial operational decisions:</p>
+<p>Agriculture is the primary livelihood source for over 50 percent of India's population and contributes roughly 18 percent to India's Gross Domestic Product (GDP). The agricultural sector is predominantly composed of small and marginal farmers who cultivate less than two hectares of land. Every cropping season, smallholders make four crucial operational decisions:</p>
 <p style="margin-left: 20pt; text-indent: -20pt;"><b>1.</b> Crop Selection: Choosing the most suitable crop for their local agro-climatic conditions.</p>
 <p style="margin-left: 20pt; text-indent: -20pt;"><b>2.</b> Soil Fertility &amp; Nutrition: Determining chemical fertilizer requirements without degrading topsoil health.</p>
 <p style="margin-left: 20pt; text-indent: -20pt;"><b>3.</b> Water Management: Scheduling irrigation to avoid groundwater depletion or waterlogging.</p>
@@ -150,6 +155,8 @@ a {
 <p>In practice, smallholders rely heavily on informal guesswork, advice from local chemical retailers, or traditional habits. This leads to continuous monocropping, acute soil acidification from excessive urea usage, groundwater over-extraction, and missed welfare subsidies.</p>
 <p>Machine Learning (ML), Artificial Intelligence (AI), and Data Science offer practical solutions to these issues. By learning patterns from historical government crop census records, 100-year rainfall normals, laboratory soil test assays, and crop water balance principles, data-driven systems provide reliable agronomic guidance.</p>
 <p>This project implements AGRIAGENT, an integrated agricultural intelligence system designed for Indian agriculture. AGRIAGENT avoids synthetic data. It connects 233,516 official crop census records from the Directorate of Economics and Statistics (DESAgri), 641 district rainfall normals from the India Meteorological Department (IMD), 1,070 laboratory soil test samples from the National Soil Health Card scheme, ICAR guidelines, and verified government welfare initiatives into a practical advisory platform.</p>
+<p>The complete open-source implementation, reproducible data pipelines, and machine learning models are available on GitHub:</p>
+<p><a href="https://github.com/SaiiieSJaswanth/AGRIAGENT" target="_blank">https://github.com/SaiiieSJaswanth/AGRIAGENT</a></p>
 <hr>
 <h3>2. MOTIVATION</h3>
 <p>The motivation for this case study comes from the persistent economic and environmental vulnerabilities facing smallholder Indian farmers.</p>
@@ -161,15 +168,15 @@ a {
 <p>An AI and Data Science solution is needed because no farmer or local extension officer can manually evaluate twenty years of district census statistics, climate normals, multi-parameter soil chemistry, fertilizer stoichiometry, and welfare eligibility criteria simultaneously. AGRIAGENT automates this analysis to provide clear, actionable advisory.</p>
 <hr>
 <h3>3. LITERATURE SURVEY</h3>
-<p>To understand existing systems and address research gaps, we reviewed 6 technical research papers:</p>
+<p>To understand existing systems and address research gaps, we reviewed 6 technical research papers from recent IEEE and peer-reviewed venues:</p>
 <p class="table-title"><b>Table 1: Master Literature Survey Summary</b></p>
 <table>
 <thead><tr>
-<th>S.No</th>
-<th>Authors name(s)</th>
-<th>Full title of the paper with year</th>
-<th>Inference from the paper</th>
-<th>Open Problem (For proposed work)</th>
+<th style="width: 7%;">S.No</th>
+<th style="width: 23%;">Authors name(s)</th>
+<th style="width: 25%;">Full title of the paper with year</th>
+<th style="width: 23%;">Inference from the paper</th>
+<th style="width: 22%;">Open Problem (For proposed work)</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -220,8 +227,8 @@ a {
 <p class="table-title"><b>Table 2: Summary of Paper 1</b></p>
 <table>
 <thead><tr>
-<th>Parameter</th>
-<th>Details</th>
+<th style="width: 25%;">Parameter</th>
+<th style="width: 75%;">Details</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -262,8 +269,8 @@ a {
 <p class="table-title"><b>Table 3: Summary of Paper 2</b></p>
 <table>
 <thead><tr>
-<th>Parameter</th>
-<th>Details</th>
+<th style="width: 25%;">Parameter</th>
+<th style="width: 75%;">Details</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -304,8 +311,8 @@ a {
 <p class="table-title"><b>Table 4: Summary of Paper 3</b></p>
 <table>
 <thead><tr>
-<th>Parameter</th>
-<th>Details</th>
+<th style="width: 25%;">Parameter</th>
+<th style="width: 75%;">Details</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -346,8 +353,8 @@ a {
 <p class="table-title"><b>Table 5: Summary of Paper 4</b></p>
 <table>
 <thead><tr>
-<th>Parameter</th>
-<th>Details</th>
+<th style="width: 25%;">Parameter</th>
+<th style="width: 75%;">Details</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -388,8 +395,8 @@ a {
 <p class="table-title"><b>Table 6: Summary of Paper 5</b></p>
 <table>
 <thead><tr>
-<th>Parameter</th>
-<th>Details</th>
+<th style="width: 25%;">Parameter</th>
+<th style="width: 75%;">Details</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -430,8 +437,8 @@ a {
 <p class="table-title"><b>Table 7: Summary of Paper 6</b></p>
 <table>
 <thead><tr>
-<th>Parameter</th>
-<th>Details</th>
+<th style="width: 25%;">Parameter</th>
+<th style="width: 75%;">Details</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -512,154 +519,70 @@ a {
 <ul><li>JSON Export: Machine-readable output for digital integration.</li></ul>
 <ul><li>Vector PDF Report: A clean, publication-ready 3-page advisory document generated via Matplotlib's native PDF engine.</li></ul>
 <hr>
-<h3>7. WORKFLOW DIAGRAM</h3>
-<p>The system architecture and end-to-end execution flow of AGRIAGENT are structured as follows:</p>
-<p>System Architecture and Data Flow:</p>
-<hr>
-<p>[Farmer &amp; Land Profile Input]</p>
-<ul><li>Location: State, District, Season, Farm Area (Acres)</li></ul>
-<ul><li>Soil Lab Tests: pH, EC, Organic Carbon, P, K, S, Zn, Fe, Mn, Cu</li></ul>
-<ul><li>Social Details: Landholding category, Gender, Irrigation access</li></ul>
-<table>
-<thead><tr>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>         v</p>
-<p>[Input Validation Engine]</p>
-<ul><li>State-District cascading verification (35 States, 646 Districts)</li></ul>
-<ul><li>Physical measurement boundary validation (pH: 3.0 to 11.0, Area &gt; 0)</li></ul>
-<table>
-<thead><tr>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>         +-----------------------+-----------------------+</p>
-<table>
-<thead><tr>
-<th></th>
-<th></th>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>         v                       v                       v</p>
-<p>[Module 1: Crop Intel]   [Module 2: Soil Health] [Module 3: Fertilizer]</p>
-<ul><li>DESAgri APY census     - ICAR-IISS nutrient    - STCR dynamic dose</li></ul>
-<p>    (233,516 rows)           classification          adjustment rules</p>
-<ul><li>State Crop Catalog     - Non-leakage Random    - Commercial NPK bags</li></ul>
-<p>    (417 records)            Forest Classifier     - DAP Nitrogen</p>
-<ul><li>Shadow Random Forest   - Lime / Gypsum advice    deduction safeguard</li></ul>
-<table>
-<thead><tr>
-<th></th>
-<th></th>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>         +-----------------------+-----------------------+</p>
-<table>
-<thead><tr>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>         +-----------------------+-----------------------+</p>
-<table>
-<thead><tr>
-<th></th>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>         v                                               v</p>
-<p>[Module 4: Irrigation Advisory]         [Module 5: Scheme Intelligence]</p>
-<ul><li>FAO-56 Crop Water Demand (ETc)        - Deterministic screening matrix</li></ul>
-<ul><li>IMD District Rainfall Normals         - 140+ Central &amp; State schemes</li></ul>
-<ul><li>Interpretable Decision Tree ML        - Document checklists &amp; URLs</li></ul>
-<table>
-<thead><tr>
-<th></th>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>         +-----------------------+-----------------------+</p>
-<table>
-<thead><tr>
-</tr></thead>
-<tbody>
-</tbody></table>
-<p>                                 v</p>
-<p>[Triple-Channel Advisory Output]</p>
-<p style="margin-left: 20pt; text-indent: -20pt;"><b>1.</b> Interactive ANSI Terminal Dashboard</p>
-<p style="margin-left: 20pt; text-indent: -20pt;"><b>2.</b> Structured JSON Advisory Export</p>
-<p style="margin-left: 20pt; text-indent: -20pt;"><b>3.</b> Printable 3-Page Vector PDF Report</p>
-<hr>
+<h3>7. WORKFLOW AND SYSTEM ARCHITECTURE</h3>
+<p>The execution flow of AGRIAGENT is organized into three sequential stages:</p>
+<h4>Stage 1: Farmer Profile Input & Boundary Validation</h4>
+<ul><li>User provides farm details: State, District, Season, Farm Landholding (Acres), and optional 10-parameter soil laboratory test results.</li></ul>
+<ul><li>Input validation engine performs cascading verification against an administrative registry of 35 States and 646 Districts.</li></ul>
+<ul><li>Physical boundaries are validated: soil pH must fall between 3.0 and 11.0, acreage must be greater than zero, and nutrient levels must be non-negative.</li></ul>
+<h4>Stage 2: Multi-Module Agricultural Intelligence Processing</h4>
+<ul><li>Module 1 (Crop Intelligence): Filters the 233,516 DESAgri census records for the 5 latest recorded years, computes the mean cultivated area per crop, cross-references candidates with the 417-record State Crop Catalog, and runs the shadow Random Forest model in the background.</li></ul>
+<ul><li>Module 2 (Soil Health Assessment): Classifies the 10 chemical parameters against ICAR-IISS nutrient thresholds, applies non-target Random Forest classification, and calculates corrective lime (for pH &lt; 5.5) or gypsum (for pH &gt; 8.5) dosages.</li></ul>
+<ul><li>Module 3 (Fertilizer Recommendation): Applies ICAR Soil Test Crop Response (STCR) rules to scale standard Recommended Dose of Fertilizer (RDF), predicts the commercial regime, and calculates exact commercial bags while subtracting DAP Nitrogen from Urea.</li></ul>
+<ul><li>Module 4 (Irrigation Scheduling): Estimates crop water requirement using FAO-56 stage coefficients, subtracts effective seasonal rainfall from IMD normals, computes net deficit, and predicts schedule class via Decision Tree.</li></ul>
+<ul><li>Module 5 (Government Schemes): Screens 140+ Central and State welfare initiatives matching the farmer's landholding size, social category, and state to produce actionable document checklists and application portal links.</li></ul>
+<h4>Stage 3: Multi-Channel Advisory Synthesis</h4>
+<ul><li>Compiles all module outputs into a consolidated report dictionary.</li></ul>
+<ul><li>Renders an interactive terminal dashboard with formatted color indicators.</li></ul>
+<ul><li>Serializes complete recommendations into structured JSON format for digital record-keeping.</li></ul>
+<ul><li>Generates a publication-grade, 3-page printable vector PDF report for the farmer.</li></ul>
 <hr>
 <h3>8. DATASET DESCRIPTION & PUBLIC REFERENCE SOURCES</h3>
 <p>AGRIAGENT is built strictly on verified real-world public datasets and official government portals. No synthetic observations are used.</p>
-<p class="table-title"><b>Table 8: Dataset Description Summary</b></p>
+<p class="table-title"><b>Table 8: Core Datasets Utilized</b></p>
 <table>
 <thead><tr>
-<th>Dataset Name</th>
-<th>Source Organization</th>
-<th>Source URL</th>
-<th>Cleaned Records</th>
-<th>Key Features</th>
-<th>Target Variable</th>
-<th>Train/Test Split</th>
+<th style="width: 24%;">Dataset Name</th>
+<th style="width: 26%;">Source Organization</th>
+<th style="width: 18%;">Cleaned Records</th>
+<th style="width: 32%;">Target / Key Output</th>
 </tr></thead>
 <tbody>
 <tr>
 <td>APY Crop Census</td>
 <td>DESAgri, Ministry of Agriculture</td>
-<td><a href="https://desagri.gov.in/" target="_blank">https://desagri.gov.in/</a></td>
-<td>233,516</td>
-<td>State, District, Year, Season, Crop, Area, Production, Yield</td>
-<td>Dominant_Crop (Shadow ML)</td>
-<td>80% / 20% (41,507 / 10,377)</td>
+<td>233,516 rows</td>
+<td>Historical Cultivated Area &amp; Dominant Crop Class</td>
 </tr>
 <tr>
 <td>District Rainfall Normals</td>
 <td>India Meteorological Department</td>
-<td><a href="https://mausam.imd.gov.in/" target="_blank">https://mausam.imd.gov.in/</a></td>
-<td>641 Districts</td>
-<td>State, District, Monthly Normals (Jan-Dec), Seasonal Totals</td>
-<td>Climatological Rainfall Normal</td>
-<td>Complete coverage</td>
+<td>641 districts</td>
+<td>Monthly &amp; Seasonal Normal Rainfall (mm)</td>
 </tr>
 <tr>
 <td>Soil Health Card Lab Data</td>
 <td>National Soil Health Card Scheme</td>
-<td><a href="https://soilhealth.dac.gov.in/" target="_blank">https://soilhealth.dac.gov.in/</a></td>
-<td>1,070</td>
-<td>pH, EC, S, Zn, Fe, Mn, Cu (non-target features)</td>
-<td>Fertility_Class (Low, Med, High)</td>
-<td>80% / 20% (856 / 214)</td>
+<td>1,070 samples</td>
+<td>Multi-parameter Soil Fertility Classification</td>
 </tr>
 <tr>
 <td>Fertilizer Recommendation</td>
 <td>ICAR-STCR Guidelines</td>
-<td><a href="https://iiss.icar.gov.in/" target="_blank">https://iiss.icar.gov.in/</a></td>
-<td>14,980</td>
-<td>Soil pH, EC, OC, P, K, Recommended N, P2O5, K2O</td>
-<td>Fertilizer_Regime (5 Classes)</td>
-<td>80% / 20% (11,984 / 2,996)</td>
+<td>14,980 rows</td>
+<td>Commercial NPK Fertilizer Regime (5 Classes)</td>
 </tr>
 <tr>
 <td>Irrigation Water Balance</td>
 <td>FAO-56 &amp; IMD Climatology</td>
-<td><a href="https://www.fao.org/land-water/" target="_blank">https://www.fao.org/land-water/</a></td>
-<td>15,384</td>
-<td>Soil Water Capacity, Crop Kc, Water Requirement, Rainfall, Deficit</td>
-<td>Irrigation_Class (4 Classes)</td>
-<td>80% / 20% (12,307 / 3,077)</td>
+<td>15,384 rows</td>
+<td>Net Water Deficit &amp; Irrigation Schedule Class</td>
 </tr>
 <tr>
 <td>State Crop Catalog</td>
 <td>State Agricultural Universities</td>
-<td>ICAR Agronomy Records</td>
-<td>417</td>
-<td>State, Suitable Crop, Recommended Season, Growth Duration</td>
-<td>Verification Lookup</td>
-<td>Complete catalog</td>
+<td>417 records</td>
+<td>Agro-climatic Suitability Verification</td>
 </tr>
 </tbody></table>
 <h4>Primary Official Reference Sources:</h4>
@@ -667,6 +590,7 @@ a {
 <p style="margin-left: 20pt; text-indent: -20pt;"><b>2.</b> India Meteorological Department (IMD): <a href="https://mausam.imd.gov.in/" target="_blank">https://mausam.imd.gov.in/</a></p>
 <p style="margin-left: 20pt; text-indent: -20pt;"><b>3.</b> National Soil Health Card Scheme: <a href="https://soilhealth.dac.gov.in/" target="_blank">https://soilhealth.dac.gov.in/</a></p>
 <p style="margin-left: 20pt; text-indent: -20pt;"><b>4.</b> National Portal of India (Central &amp; State Welfare Schemes): <a href="https://india.gov.in/" target="_blank">https://india.gov.in/</a></p>
+<p style="margin-left: 20pt; text-indent: -20pt;"><b>5.</b> Project Source Code &amp; Implementation Repository: <a href="https://github.com/SaiiieSJaswanth/AGRIAGENT" target="_blank">https://github.com/SaiiieSJaswanth/AGRIAGENT</a></p>
 <hr>
 <h3>9. TOOLS & TECHNOLOGIES</h3>
 <p>The implementation utilizes established scientific Python libraries:</p>
@@ -746,11 +670,11 @@ a {
 <p class="table-title"><b>Table 9: Machine Learning Model Performance Summary</b></p>
 <table>
 <thead><tr>
-<th>Model Task</th>
-<th>Selected Algorithm</th>
-<th>Test Accuracy</th>
-<th>Weighted F1-Score</th>
-<th>Baseline Comparison</th>
+<th style="width: 22%;">Model Task</th>
+<th style="width: 20%;">Selected Algorithm</th>
+<th style="width: 13%;">Test Accuracy</th>
+<th style="width: 13%;">Weighted F1-Score</th>
+<th style="width: 32%;">Baseline Comparison</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -789,7 +713,7 @@ a {
 <p style="margin-left: 20pt; text-indent: -20pt;"><b>4.</b> Explainable Irrigation Scheduling: The Decision Tree model achieved 99.97% accuracy on test records. With a constrained depth of 5, every classification decision is fully auditable. When seasonal rainfall exceeds crop demand, the model routes immediately to 'No immediate irrigation required', conserving vital groundwater.</p>
 <h4>Automated Test Verification:</h4>
 <p>The entire pipeline was validated using Pytest across 31 automated test cases testing data integrity, agronomic rules, machine learning pipelines, and report generation:</p>
-<p>Result: 31 passed in 10.63 seconds (100% pass rate).</p>
+<p>Result: 31 passed in 31.38 seconds (100% pass rate).</p>
 <hr>
 <h3>12. CONCLUSION</h3>
 <p>This project designed and verified AGRIAGENT, a dependable agricultural intelligence system that addresses critical decision-making challenges for Indian smallholder farmers.</p>

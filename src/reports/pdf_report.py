@@ -45,9 +45,10 @@ def generate_farmer_pdf_report(report: Dict[str, Any], output_pdf_path: str):
 
         # 1. Farmer Profile Summary Box
         plt.figtext(0.08, 0.88, "1. FARMER PROFILE & REGIONAL CONTEXT", fontsize=11, weight="bold", color="#1565c0")
+        land_acres = float(p.get('land_area_acres') or 2.5)
         profile_text = (
             f"State / UT: {p.get('state', 'N/A')}   |   District: {p.get('district', 'N/A')}   |   Primary Soil Type: {p.get('soil_type', 'N/A')}\n"
-            f"Landholding: {p.get('land_area_acres', '2.5')} Acres ({float(p.get('land_area_acres', 2.5))*0.404686:.2f} ha)   |   Season: {p.get('season', 'Kharif')}   |   Irrigation: {'Assured' if p.get('irrigation_available') else 'Rainfed'}\n"
+            f"Landholding: {land_acres} Acres ({land_acres*0.404686:.2f} ha)   |   Season: {p.get('season', 'Kharif')}   |   Irrigation: {'Assured' if p.get('irrigation_available') else 'Rainfed'}\n"
             f"Target/Current Crop: {p.get('current_crop', 'Rice')}"
         )
         plt.figtext(0.08, 0.82, profile_text, fontsize=9, color="#212121", 

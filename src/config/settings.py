@@ -23,6 +23,7 @@ STATE_CROP_CATALOG_PATH = KNOWLEDGE_DIR / "state_crop_catalog.csv"
 
 # Output Directories
 MODEL_DIR = ROOT / "models"
+MODELS_DIR = MODEL_DIR
 REPORT_DIR = ROOT / "reports"
 OUTPUT_DIR = ROOT / "outputs"
 
