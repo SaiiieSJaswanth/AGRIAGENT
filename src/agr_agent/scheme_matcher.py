@@ -19,7 +19,8 @@ def match_schemes(profile, schemes):
                 "required_documents": scheme.get("required_documents", []),
                 "application_method": scheme.get("application_method"),
                 "official_source": scheme.get("official_source"),
-                "source_url": scheme.get("source_url"),
+                "source_url": scheme.get("source_url") or "https://agricoop.nic.in/",
+                "official_portal_url": scheme.get("source_url") or "https://agricoop.nic.in/",
                 "last_verified": scheme.get("last_verified"),
                 "evidence": evidence,
             })
