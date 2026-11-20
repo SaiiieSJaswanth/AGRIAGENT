@@ -10,5 +10,6 @@ def test_crop_shortlist_comes_from_real_historical_records():
 
 def test_no_synthetic_data_file_or_legacy_switch():
     assert not Path("data/raw/dataset1.csv").exists()
-    content = Path("train_pipeline.py").read_text(encoding="utf-8")
+    train_path = Path("train.py") if Path("train.py").exists() else Path("train_pipeline.py")
+    content = train_path.read_text(encoding="utf-8")
     assert "--legacy" not in content

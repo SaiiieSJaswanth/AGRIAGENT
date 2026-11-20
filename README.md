@@ -111,11 +111,8 @@ An enterprise-grade hybrid agricultural decision support system integrating **fo
 ```
 AGRIAGENT/
 ├── app.py                      # Flask 3D Web Application & REST API Server (737 lines)
-├── train_pipeline.py           # ML Model Training Pipeline across all 4 modules (759 lines)
-├── train.py                    # Training pipeline alias
-├── run_agriagent.py            # Interactive CLI Inference Engine (559 lines)
-├── run.py                      # Interactive CLI alias
-├── predict.py                  # Standalone CLI inference utility
+├── train.py                    # Complete ML Model Training Pipeline for all 4 models
+├── run.py                      # Interactive CLI Machine Learning Inference Engine
 ├── run_website.bat             # 1-Click launcher for 3D Web Platform
 ├── push_to_github.bat          # 1-Click GitHub sync utility
 ├── requirements.txt            # Python dependencies
@@ -152,12 +149,12 @@ Open your browser at: **`http://127.0.0.1:5000`**
 
 ### 3. Run Interactive CLI Advisory
 ```bash
-python run_agriagent.py
+python run.py
 ```
 
 ### 4. Retrain All 4 Machine Learning Models
 ```bash
-python train_pipeline.py
+python train.py
 ```
 
 ### 5. Run Verification Test Suite
