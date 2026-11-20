@@ -23,10 +23,28 @@ import numpy as np
 import pandas as pd
 import joblib
 
-# Ensure project root is in sys.path
-PROJECT_ROOT = Path(__file__).resolve().parent
+# ==============================================================================
+# ENVIRONMENT AND PATH RESOLUTION (AUTO-DISCOVER ROBUST ROOT)
+# ==============================================================================
+CURRENT_DIR = Path(__file__).resolve().parent
+CANDIDATE_ROOTS = [
+    CURRENT_DIR,
+    CURRENT_DIR / "AGRIAGENT_FINAL_COMPLETE" / "AGRIAGENT_CROP_ML_HYBRID",
+    CURRENT_DIR.parent / "AGRIAGENT_FINAL_COMPLETE" / "AGRIAGENT_CROP_ML_HYBRID",
+]
+PROJECT_ROOT = CURRENT_DIR
+for cand in CANDIDATE_ROOTS:
+    if (cand / "src").exists():
+        PROJECT_ROOT = cand
+        break
+
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
+
+try:
+    os.chdir(PROJECT_ROOT)
+except Exception:
+    pass
 
 from src.config.settings import (
     STATE_DISTRICT_MAP_PATH, STATE_CROP_CATALOG_PATH, REPORT_DIR, OUTPUT_DIR,

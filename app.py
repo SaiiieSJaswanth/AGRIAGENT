@@ -47,11 +47,27 @@ import joblib
 from flask import Flask, render_template, request, jsonify, send_file
 
 # ==============================================================================
-# ENVIRONMENT AND PATH RESOLUTION
+# ENVIRONMENT AND PATH RESOLUTION (AUTO-DISCOVER ROBUST ROOT)
 # ==============================================================================
-PROJECT_ROOT = Path(__file__).resolve().parent
+CURRENT_DIR = Path(__file__).resolve().parent
+CANDIDATE_ROOTS = [
+    CURRENT_DIR,
+    CURRENT_DIR / "AGRIAGENT_FINAL_COMPLETE" / "AGRIAGENT_CROP_ML_HYBRID",
+    CURRENT_DIR.parent / "AGRIAGENT_FINAL_COMPLETE" / "AGRIAGENT_CROP_ML_HYBRID",
+]
+PROJECT_ROOT = CURRENT_DIR
+for cand in CANDIDATE_ROOTS:
+    if (cand / "src").exists():
+        PROJECT_ROOT = cand
+        break
+
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
+
+try:
+    os.chdir(PROJECT_ROOT)
+except Exception:
+    pass
 
 from src.config.settings import (
     STATE_DISTRICT_MAP_PATH, STATE_CROP_CATALOG_PATH, REPORT_DIR, OUTPUT_DIR,
@@ -66,7 +82,11 @@ from src.reports.json_report import save_report
 # ==============================================================================
 # FLASK APPLICATION INITIALIZATION
 # ==============================================================================
-app = Flask(__name__, template_folder="templates", static_folder="static")
+app = Flask(
+    __name__,
+    template_folder=str(PROJECT_ROOT / "templates"),
+    static_folder=str(PROJECT_ROOT / "static") if (PROJECT_ROOT / "static").exists() else None
+)
 app.config["SECRET_KEY"] = "agriagent-enterprise-3d-secret-key-2026"
 app.config["JSON_SORT_KEYS"] = False
 
